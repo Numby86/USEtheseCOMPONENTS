@@ -1,0 +1,88 @@
+.detail{
+    width: 95%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 15px;
+    margin: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+.detailCard{
+    background-color: whitesmoke;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 95%;
+    height: 95%;
+    background-color: inherit;
+}
+
+.html{
+    border: solid 2px #e34c26;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-rows: 1fr 4fr;
+    .logoHtml{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: #e34c26;
+        height: 80px;
+    }
+
+}
+.scss{
+    border: solid 2px #0070B8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-template-rows: 1fr 4fr;
+    .logoScss{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: #0070B8;
+        height: 80px;
+    }
+}
+.scss, .html{
+    border-radius: 5px;
+}
+.copy {
+    font-family: monospace;
+    font-weight: bold;
+    background-color: rgb(5, 5, 22);
+    box-shadow: 0 0 10px rgb(5, 5, 22);
+    color: inherit;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    transition: .3s;
+  }
+  
+  .copy:hover {
+    background-color: transparent;
+    border: 2px solid rgb(5, 5, 22);
+    color: rgb(5, 5, 22);
+    box-shadow: 0 0 10px rgb(5, 5, 22);
+  }
+pre{
+    display: none;
+}
+.editor{
+    max-width: 100%;
+    max-height: 100%;
+}
+.logosHTMLCSS{
+    width: 72px;
+    height: 72px;
+    background-color: rgb(5, 5, 22);
+    border-radius: 50%;
+}
