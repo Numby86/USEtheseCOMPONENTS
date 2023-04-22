@@ -4,11 +4,8 @@ import './LoaderKinetic.scss';
 const LoaderKinetic = () => {
 
   return (
-    <div className='divWrap'>
       <div className="kinetic">
       </div>
-    </div>
-
   )
 }
 

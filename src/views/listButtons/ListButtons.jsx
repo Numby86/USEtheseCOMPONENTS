@@ -1,18 +1,15 @@
-import React, { useState } from 'react';
 import './ListButtons.scss';
-import { renderToString } from 'react-dom/server';
 import { Link } from 'react-router-dom';
 
 const ListButtons = ({ listButtons }) => {
 
   return (
     <>
-    <h2>LISTA BOTONES</h2>
     <div className="listCard">
-      {listButtons.map((button) => (
-        <div key={button.id} className="card" >
-          <Link to={`/detail/${button.id}`}>
-          {button.component}
+      {listButtons.map((el) => (
+        <div key={el.id} className="card" >
+          <Link to={`/detailButton/${el.id}`}>
+          {el.component}
           </Link>
         </div>
       ))}

@@ -3,7 +3,6 @@ import './LoaderPuzzle.scss';
 
 const LoaderPuzzle = () => {
   return (
-    <div className='divWrap'>
         <div className="banter-loader">
             <div className="banter-loader__box"></div>
             <div className="banter-loader__box"></div>
@@ -15,7 +14,6 @@ const LoaderPuzzle = () => {
             <div className="banter-loader__box"></div>
             <div className="banter-loader__box"></div>
         </div>
-    </div>
   )
 }
 

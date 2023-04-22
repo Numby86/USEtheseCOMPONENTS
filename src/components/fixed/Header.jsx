@@ -6,17 +6,21 @@ const Header = () => {
   return (
     <>
     <div className='title'>
-      <h1 className='UseComponents h1'>UseComponents</h1>
+      <Link to={'/'}>
+        <h1 className='UseComponents h1'>UseComponents</h1>
+      </Link>
     </div>
     
-    <div>
-      <Link to={'/listLoaders'}>
-        <h3>LOADERS</h3>
-      </Link>
-      <Link to={'/listButtons'}>
-        <h3>BUTTONS</h3>
-      </Link>
-    </div>
+    <nav>
+      <ul className='ul'>
+        <Link to={'/listLoaders'}>
+          <li>LOADERS</li>
+        </Link>
+        <Link to={'/listButtons'}>
+          <li>BUTTONS</li>
+        </Link>
+      </ul>
+    </nav>
     </>
 
   )

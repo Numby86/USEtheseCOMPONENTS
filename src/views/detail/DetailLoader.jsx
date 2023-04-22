@@ -5,19 +5,19 @@ import { Editor } from '@monaco-editor/react';
 import { Link, useParams } from 'react-router-dom';
 
 
-const Detail = ({ listButtons }) => {
+const Detail = ({ listLoaders }) => {
 
   const params = useParams();
-  const foundButton = listButtons.find((el) => el.id === parseInt(params.id));
-  console.log(foundButton);
+
+  const foundLoader = listLoaders.find((el) => el.id === parseInt(params.id));
 
     const [copiedHtml, setCopiedHtml] = useState(false);
     const [copiedScss, setCopiedScss] = useState(false);
     const [htmlText, setHtmlText] = useState('');
     const [scssText, setScssText] = useState('');
 
-    const htmlCode = `${foundButton.html}`;
-    const scssCode = `${foundButton.scss}`;
+    const htmlCode = `${foundLoader.html}`;
+    const scssCode = `${foundLoader.scss}`;
 
     useEffect(() => {
         setHtmlText(document.querySelector('.codigoHtml').innerText);
@@ -30,7 +30,7 @@ const Detail = ({ listButtons }) => {
     return (
         <div className='detail'>
             <div className='card detailCard'>
-              {foundButton ? <>{foundButton.component}</> : 'error'}
+              {foundLoader ? <>{foundLoader.component}</> : 'error'}
             </div>
             <div className='html'>
                 <div className='logoHtml' >

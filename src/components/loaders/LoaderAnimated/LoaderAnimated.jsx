@@ -5,7 +5,6 @@ const LoaderAnimated = () => {
 
 
   return (
-    <div className='divWrap'>
         <svg className="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
@@ -20,7 +19,6 @@ const LoaderAnimated = () => {
                 fill="none" stroke="url(#pl-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"
                 stroke-dasharray="44 1111" stroke-dashoffset="10" />
         </svg>
-    </div>
   )
 }
 

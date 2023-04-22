@@ -1,31 +1,20 @@
-import React, { useEffect, useRef, useState } from 'react';
 import './ListLoaders.scss';
-import LoaderAnimated from '../../components/loaders/LoaderAnimated/LoaderAnimated';
-import LoaderKinetic from '../../components/loaders/LoaderKinetic/LoaderKinetic';
-import LoaderNeon from '../../components/loaders/LoaderNeon/LoaderNeon';
-import LoaderPuzzle from '../../components/loaders/LoaderPuzzle/LoaderPuzzle';
+import { Link } from 'react-router-dom';
 
-const ListLoader = () => {
-
-
-  const loaders = [
-    { id: 1, component: <LoaderAnimated />, name: 'Animated' },
-    { id: 2, component: <LoaderKinetic />, name: 'Kinetic' },
-    { id: 3, component: <LoaderNeon />, name: 'Neon' },
-    { id: 4, component: <LoaderPuzzle />, name: 'Puzzle' },
-  ];
+const ListLoader = ({ listLoaders }) => {
 
 return (
-  <>
-    <h2>LISTA LOADERS</h2>
+    <>
     <div className="listCard">
-      {loaders.map((loader) => (
-        <div key={loader.id} className="card">
-          {loader.component}
+      {listLoaders.map((el) => (
+        <div key={el.id} className="card" >
+          <Link to={`/detailLoader/${el.id}`}>
+          {el.component}
+          </Link>
         </div>
       ))}
     </div>
-  </>
+    </>
 );
 };
 

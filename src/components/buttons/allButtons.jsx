@@ -164,4 +164,11 @@ export const allButtons = [
     color: #fff;
   }`,
   },
+      //     {
+    //     id: ,
+    //     component: , 
+    //     name: '', 
+    //     html: ``, 
+    //     scss: ``
+    // }, 
 ];

@@ -1,30 +1,9 @@
-// * {
-//     border: 0;
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-// }
-
 :root {
     --hue: 223;
     --bg: hsl(var(--hue), 10%, 90%);
     --fg: hsl(var(--hue), 10%, 10%);
     font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
 }
-
-// body {
-//     background-color: var(--bg);
-//     color: var(--fg);
-//     font: 1em/1.5 sans-serif;
-//     height: 100vh;
-//     display: grid;
-//     place-items: center;
-//     transition: background-color 0.3s;
-// }
-
-// main {
-//     padding: 1.5em 0;
-// }
 
 .pl,
 .pl__worm {
@@ -49,7 +28,6 @@
     animation-timing-function: cubic-bezier(0.42, 0.17, 0.75, 0.83);
 }
 
-/* Dark theme */
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: hsl(var(--hue), 10%, 10%);
@@ -61,7 +39,6 @@
     }
 }
 
-/* Animations */
 @keyframes bump {
 
     from,
