@@ -3,17 +3,17 @@ import './LoaderPuzzle.scss';
 
 const LoaderPuzzle = () => {
   return (
-    <div class='divWrap'>
-        <div class="banter-loader">
-            <div class="banter-loader__box"></div>
-            <div class="banter-loader__box"></div>
-            <div class="banter-loader__box"></div>
-            <div class="banter-loader__box"></div>
-            <div class="banter-loader__box"></div>
-            <div class="banter-loader__box"></div>
-            <div class="banter-loader__box"></div>
-            <div class="banter-loader__box"></div>
-            <div class="banter-loader__box"></div>
+    <div className='divWrap'>
+        <div className="banter-loader">
+            <div className="banter-loader__box"></div>
+            <div className="banter-loader__box"></div>
+            <div className="banter-loader__box"></div>
+            <div className="banter-loader__box"></div>
+            <div className="banter-loader__box"></div>
+            <div className="banter-loader__box"></div>
+            <div className="banter-loader__box"></div>
+            <div className="banter-loader__box"></div>
+            <div className="banter-loader__box"></div>
         </div>
     </div>
   )

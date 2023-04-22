@@ -3,9 +3,7 @@ import './ButtonGlitch.scss';
 
 const ButtonGlitch = () => {
   return (
-    <div class='divWrap'>
-        <button class='glitch'> GLITCH </button>
-    </div>
+        <button className='glitch'> GLITCH </button>
   )
 }
 

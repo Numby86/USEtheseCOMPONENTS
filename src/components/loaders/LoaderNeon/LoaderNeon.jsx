@@ -2,13 +2,13 @@ import React from 'react';
 import './LoaderNeon.scss';
 
 const LoaderNeon = () => {
-  return (
-    <div class='divWrap'>
-      <div class='loader'>
 
+  return (
+    <div className='divWrap'>
+      <div className='loader'>
       </div>
     </div>
   )
 }
 
-export default LoaderNeon
+export default LoaderNeon;

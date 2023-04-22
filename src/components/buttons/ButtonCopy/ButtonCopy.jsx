@@ -1,14 +1,15 @@
 import React from 'react';
-import './ButtonCopy.scss';
+import './ButtonCopy.scss'
 
 const ButtonCopy = () => {
+
   return (
-    <div>
-        <button class='copy'>
-            Button
-        </button>
-    </div>
+    <>
+      <button className='copy'>
+          Button
+      </button>
+    </>
   )
 }
 
-export default ButtonCopy
+export default ButtonCopy;

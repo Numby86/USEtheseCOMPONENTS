@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ListButtons.scss';
+import { renderToString } from 'react-dom/server';
+import { Link } from 'react-router-dom';
 
-import ButtonGlitch from '../../components/buttons/ButtonGlitch/ButtonGlitch';
-import ButtonNeon from '../../components/buttons/ButtonNeon/ButtonNeon'
+const ListButtons = ({ listButtons }) => {
 
-const ListButtons = () => {
   return (
     <>
     <h2>LISTA BOTONES</h2>
-    <div class="listCard">
-      <div class="card"><ButtonGlitch/></div>
-      <div class="card"><ButtonNeon/></div>
-      <div class="card"></div>
+    <div className="listCard">
+      {listButtons.map((button) => (
+        <div key={button.id} className="card" >
+          <Link to={`/detail/${button.id}`}>
+          {button.component}
+          </Link>
+        </div>
+      ))}
     </div>
     </>
   )
