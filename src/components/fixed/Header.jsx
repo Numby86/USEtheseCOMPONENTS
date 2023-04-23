@@ -20,11 +20,17 @@ const Header = () => {
         <Link to={'/listCards'}>
           <li>CARDS</li>
         </Link>
+        <Link to={'/listCheckboxes'}>
+          <li>CHECKBOXES</li>
+        </Link>
         <Link to={'/listInputs'}>
           <li>INPUTS</li>
         </Link>
         <Link to={'/listLoaders'}>
           <li>LOADERS</li>
+        </Link>
+        <Link to={'/listRadios'}>
+          <li>RADIO-BTNS</li>
         </Link>
         <Link to={'/listToggles'}>
           <li>TOGGLES</li>

@@ -1,16 +1,14 @@
 import './Lists.scss';
 import { Link } from 'react-router-dom';
 
-const ListButtons = ({ listButtons }) => {
-
+const ListCheckboxes = ({ listCheckboxes }) => {
   return (
     <>
     <div className="listCard">
-      {listButtons.map((el) => (
+      {listCheckboxes.map((el) => (
         <div key={el.id} className="card" >
+          <Link to={`/detailCheckbox/${el.id}`}>
           {el.component}
-          <Link to={`/detailButton/${el.id}`}>
-            <button className='MYbutton'>GO CODE</button>
           </Link>
         </div>
       ))}
@@ -19,4 +17,4 @@ const ListButtons = ({ listButtons }) => {
   )
 }
 
-export default ListButtons;
+export default ListCheckboxes;

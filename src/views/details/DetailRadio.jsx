@@ -4,20 +4,18 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Editor } from '@monaco-editor/react';
 import { Link, useParams } from 'react-router-dom';
 
-
-const Detail = ({ listButtons }) => {
-
+const DetailRadio = ({ listRadios }) => {
   const params = useParams();
 
-  const foundButton = listButtons.find((el) => el.id === parseInt(params.id));
+  const foundRadio = listRadios.find((el) => el.id === parseInt(params.id));
 
     const [copiedHtml, setCopiedHtml] = useState(false);
     const [copiedScss, setCopiedScss] = useState(false);
     const [htmlText, setHtmlText] = useState('');
     const [scssText, setScssText] = useState('');
 
-    const htmlCode = `${foundButton.html}`;
-    const scssCode = `${foundButton.scss}`;
+    const htmlCode = `${foundRadio.html}`;
+    const scssCode = `${foundRadio.scss}`;
 
     useEffect(() => {
         setHtmlText(document.querySelector('.codigoHtml').innerText);
@@ -28,13 +26,9 @@ const Detail = ({ listButtons }) => {
     }, []);
 
     return (
-        <>
-        <Link to={'/listButtons'}>
-            <button className='MYbutton'>Volver</button>
-        </Link>
         <div className='detail'>
             <div className='card detailCard'>
-              {foundButton ? <>{foundButton.component}</> : 'error'}
+              {foundRadio ? <>{foundRadio.component}</> : 'error'}
             </div>
             <div className='html'>
                 <div className='logoHtml' >
@@ -77,8 +71,7 @@ const Detail = ({ listButtons }) => {
                 </div>
             </div>
         </div>
-        </>
     );
 }
 
-export default Detail;
+export default DetailRadio;
