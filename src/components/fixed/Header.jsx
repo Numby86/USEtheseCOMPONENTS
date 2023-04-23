@@ -2,6 +2,7 @@ import React from 'react';
 import './Fixed.scss';
 import { Link } from "react-router-dom";
 
+
 const Header = () => {
   return (
     <>
@@ -13,11 +14,20 @@ const Header = () => {
     
     <nav>
       <ul className='ul'>
+        <Link to={'/listButtons'}>
+          <li>BUTTONS</li>
+        </Link>
+        <Link to={'/listCards'}>
+          <li>CARDS</li>
+        </Link>
+        <Link to={'/listInputs'}>
+          <li>INPUTS</li>
+        </Link>
         <Link to={'/listLoaders'}>
           <li>LOADERS</li>
         </Link>
-        <Link to={'/listButtons'}>
-          <li>BUTTONS</li>
+        <Link to={'/listToggles'}>
+          <li>TOGGLES</li>
         </Link>
       </ul>
     </nav>

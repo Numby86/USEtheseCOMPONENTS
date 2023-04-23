@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import './Detail.scss';
+import './Details.scss';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Editor } from '@monaco-editor/react';
 import { Link, useParams } from 'react-router-dom';
 
 
-const Detail = ({ listLoaders }) => {
+const Detail = ({ listButtons }) => {
 
   const params = useParams();
 
-  const foundLoader = listLoaders.find((el) => el.id === parseInt(params.id));
+  const foundButton = listButtons.find((el) => el.id === parseInt(params.id));
 
     const [copiedHtml, setCopiedHtml] = useState(false);
     const [copiedScss, setCopiedScss] = useState(false);
     const [htmlText, setHtmlText] = useState('');
     const [scssText, setScssText] = useState('');
 
-    const htmlCode = `${foundLoader.html}`;
-    const scssCode = `${foundLoader.scss}`;
+    const htmlCode = `${foundButton.html}`;
+    const scssCode = `${foundButton.scss}`;
 
     useEffect(() => {
         setHtmlText(document.querySelector('.codigoHtml').innerText);
@@ -30,7 +30,7 @@ const Detail = ({ listLoaders }) => {
     return (
         <div className='detail'>
             <div className='card detailCard'>
-              {foundLoader ? <>{foundLoader.component}</> : 'error'}
+              {foundButton ? <>{foundButton.component}</> : 'error'}
             </div>
             <div className='html'>
                 <div className='logoHtml' >

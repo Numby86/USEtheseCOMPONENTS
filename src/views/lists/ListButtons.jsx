@@ -1,22 +1,21 @@
-import './ListLoaders.scss';
+import './Lists.scss';
 import { Link } from 'react-router-dom';
 
-const ListLoader = ({ listLoaders }) => {
+const ListButtons = ({ listButtons }) => {
 
-return (
+  return (
     <>
     <div className="listCard">
-      {listLoaders.map((el) => (
+      {listButtons.map((el) => (
         <div key={el.id} className="card" >
-          <Link to={`/detailLoader/${el.id}`}>
+          <Link to={`/detailButton/${el.id}`}>
           {el.component}
           </Link>
         </div>
       ))}
     </div>
     </>
-);
-};
+  )
+}
 
-export default ListLoader;
-
+export default ListButtons;

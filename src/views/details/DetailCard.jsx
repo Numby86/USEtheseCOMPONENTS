@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import './Detail.scss';
+import './Details.scss';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Editor } from '@monaco-editor/react';
 import { Link, useParams } from 'react-router-dom';
 
-
-const Detail = ({ listButtons }) => {
-
+const DetailCard = ({ listCards }) => {
   const params = useParams();
 
-  const foundButton = listButtons.find((el) => el.id === parseInt(params.id));
+  const foundCard = listCards.find((el) => el.id === parseInt(params.id));
 
     const [copiedHtml, setCopiedHtml] = useState(false);
     const [copiedScss, setCopiedScss] = useState(false);
     const [htmlText, setHtmlText] = useState('');
     const [scssText, setScssText] = useState('');
 
-    const htmlCode = `${foundButton.html}`;
-    const scssCode = `${foundButton.scss}`;
+    const htmlCode = `${foundCard.html}`;
+    const scssCode = `${foundCard.scss}`;
 
     useEffect(() => {
         setHtmlText(document.querySelector('.codigoHtml').innerText);
@@ -30,7 +28,7 @@ const Detail = ({ listButtons }) => {
     return (
         <div className='detail'>
             <div className='card detailCard'>
-              {foundButton ? <>{foundButton.component}</> : 'error'}
+              {foundCard ? <>{foundCard.component}</> : 'error'}
             </div>
             <div className='html'>
                 <div className='logoHtml' >
@@ -76,4 +74,4 @@ const Detail = ({ listButtons }) => {
     );
 }
 
-export default Detail;
+export default DetailCard;
