@@ -1,0 +1,48 @@
+.loaderClock {
+    width: 65px;
+    height: 65px;
+    border: 8px solid #ee9b00a6;
+    border-radius: 50px;
+    position: relative;
+   }
+   
+   .loaderClock span {
+    display: block;
+    background: #ee9b00;
+   }
+   
+   .loaderClock .hour ,
+   .loaderClock .min {
+    width: 6px;
+    height: 22px;
+    border-radius: 50px;
+    position: absolute;
+    top: 24.5px;
+    left: 21px;
+    animation: load9243 1.2s linear infinite;
+    transform-origin: top center;
+   }
+   
+   .loaderClock .min {
+    height: 17px;
+    animation: load9243 4s linear infinite;
+   }
+   
+   .loaderClock .circel {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 19px;
+    left: 19px;
+   }
+   
+   @keyframes load9243 {
+    0% {
+     transform: rotate(0deg);
+    }
+   
+    100% {
+     transform: rotate(360deg);
+    }
+   }

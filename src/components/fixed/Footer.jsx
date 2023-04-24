@@ -4,7 +4,7 @@ import './Fixed.scss';
 const Footer = () => {
   return (
     <div>
-      <h2>FOOTER</h2>
+      <h2 className='footer'>FOOTER</h2>
     </div>
   )
 }

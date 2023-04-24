@@ -36,6 +36,7 @@ function App() {
   const listCheckboxes = allCheckboxes;
   const listInputs = allInputs;
   const listLoaders = allLoaders;
+  
   const listRadios = allRadios;
   const listToggles = allToggles;
 

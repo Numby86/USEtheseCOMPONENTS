@@ -6,8 +6,25 @@
 .h1{
     font-size: 48px;
 }
-.ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.myNavBar{
+    background-color: #E94BE8;
+    margin: 15px 25px 25px 25px;
+    border-radius: 35px;
+    font-size: 20px;
+    &__ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__li{
+        font-weight: bold;
+        padding: 10px;
+        min-width: 150px;
+        &:hover{
+            background-color: rgb(5, 5, 22);
+            color: rgb(0, 255, 213);
+            box-shadow: 0 0 15px #E94BE8;
+        }
+    }
 }
+

@@ -12,28 +12,28 @@ const Header = () => {
       </Link>
     </div>
     
-    <nav>
-      <ul className='ul'>
+    <nav className='myNavBar'>
+      <ul className='myNavBar__ul'>
         <Link to={'/listButtons'}>
-          <li>BUTTONS</li>
+          <li className='myNavBar__li'>BUTTONS</li>
         </Link>
         <Link to={'/listCards'}>
-          <li>CARDS</li>
+          <li className='myNavBar__li'>CARDS</li>
         </Link>
         <Link to={'/listCheckboxes'}>
-          <li>CHECKBOXES</li>
+          <li className='myNavBar__li'>CHECKBOXES</li>
         </Link>
         <Link to={'/listInputs'}>
-          <li>INPUTS</li>
+          <li className='myNavBar__li'>INPUTS</li>
         </Link>
         <Link to={'/listLoaders'}>
-          <li>LOADERS</li>
+          <li className='myNavBar__li'>LOADERS</li>
         </Link>
         <Link to={'/listRadios'}>
-          <li>RADIO-BTNS</li>
+          <li className='myNavBar__li'>RADIO-BTNS</li>
         </Link>
         <Link to={'/listToggles'}>
-          <li>TOGGLES</li>
+          <li className='myNavBar__li'>TOGGLES</li>
         </Link>
       </ul>
     </nav>
