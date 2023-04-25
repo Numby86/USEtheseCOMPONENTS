@@ -1,13 +1,12 @@
 import React from 'react';
-import './ButtonCopy.scss'
+import styles from './ButtonCopy.module.scss';
 
 const ButtonCopy = () => {
 
   return (
     <>
-      <button className='copy'>
-          Button
-      </button>
+
+<button class={styles.buttonDownload}>Download</button>
     </>
   )
 }

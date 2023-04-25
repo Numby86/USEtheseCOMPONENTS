@@ -1,0 +1,11 @@
+.lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    & a {
+        padding: 4px;
+        cursor: pointer;
+    }
+}

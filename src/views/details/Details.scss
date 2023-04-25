@@ -1,6 +1,10 @@
 .detail{
     width: 95%;
     height: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     display: grid;
     grid-template-columns: 1.25fr 1fr;
     grid-template-rows: 2fr 1fr;

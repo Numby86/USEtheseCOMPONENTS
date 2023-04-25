@@ -31,19 +31,19 @@ import ListToggles from './views/lists/ListToggles';
 
 function App() {
 
-  const listButtons = allButtons;
-  const listCards = allCards;
-  const listCheckboxes = allCheckboxes;
-  const listInputs = allInputs;
-  const listLoaders = allLoaders;
-  
-  const listRadios = allRadios;
-  const listToggles = allToggles;
+  const listButtons = allButtons.sort(() => Math.random() - 0.5);
+  const listCards = allCards.sort(() => Math.random() - 0.5);
+  const listCheckboxes = allCheckboxes.sort(() => Math.random() - 0.5);
+  const listInputs = allInputs.sort(() => Math.random() - 0.5);
+  const listLoaders = allLoaders.sort(() => Math.random() - 0.5);
+  const listRadios = allRadios.sort(() => Math.random() - 0.5);
+  const listToggles = allToggles.sort(() => Math.random() - 0.5);
 
   return (
     <div className="App">
       <Header></Header>
-        <Routes>
+      <main className='main'>
+      <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/listButtons' element={<ListButtons listButtons={listButtons} />}></Route>
           <Route path='/listCards' element={<ListCards listCards={listCards} />}></Route>
@@ -61,6 +61,7 @@ function App() {
           <Route path='/detailRadio/:id' element={<DetailRadio listRadios={listRadios} />}></Route>
           <Route path='/detailToggle/:id' element={<DetailToggle listToggles={listToggles} />}></Route>
         </Routes>
+      </main>
       <Footer></Footer>
     </div>
   );

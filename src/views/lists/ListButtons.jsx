@@ -7,12 +7,17 @@ const ListButtons = ({ listButtons }) => {
     <>
     <div className="listCard">
       {listButtons.map((el) => (
-        <div key={el.id} className="card" >
-          {el.component}
-          <Link to={`/detailButton/${el.id}`}>
-            <button className='MYbutton'>GO CODE</button>
-          </Link>
-        </div>
+
+          <div key={el.id} className="card" >
+            <Link to={`/detailButton/${el.id}`}>
+              {el.component}
+              {/* <Link to={`/detailButton/${el.id}`}>
+                <button className='MYbutton'>GO CODE</button>
+              </Link> */}
+            </Link>
+          </div>
+
+
       ))}
     </div>
     </>

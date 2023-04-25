@@ -3,7 +3,7 @@ import './ButtonNeon.scss';
 
 const ButtonNeon = () => {
   return (
-      <button className="bottone1"><strong> BUTTON </strong></button>
+      <button className="bottone1"> BUTTON </button>
   )
 }
 

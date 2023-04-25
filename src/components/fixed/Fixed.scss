@@ -7,7 +7,7 @@
     font-size: 48px;
 }
 .myNavBar{
-    background-color: #E94BE8;
+    background-color: rgba(254, 1, 153, 0.8);
     margin: 15px 25px 25px 25px;
     border-radius: 35px;
     font-size: 20px;
@@ -20,6 +20,7 @@
         font-weight: bold;
         padding: 10px;
         min-width: 150px;
+        border-radius: 55px 55px 15px 15px;
         &:hover{
             background-color: rgb(5, 5, 22);
             color: rgb(0, 255, 213);
