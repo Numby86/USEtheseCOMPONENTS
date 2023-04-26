@@ -1,0 +1,42 @@
+/* Hide the default checkbox */
+.containerMore .iptMore {
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+  }
+  
+  .containerMore {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background: rgba(216, 216, 216, 0.603);
+  }
+  
+  .containerMore:hover {
+    background: rgba(197, 197, 197, 0.527);
+  }
+  
+  .lineMore {
+    width: calc(100% - 8px);
+    height: 3px;
+    left: 4px;
+    background: rgb(58, 58, 58);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .7s transform cubic-bezier(0,1,.33,1.2), background .4s;
+  }
+  
+  .line-indicatorMore {
+    transform: translateY(-50%) rotate(90deg);
+  }
+  
+  .containerMore .iptMore:checked ~ .line-indicatorMore {
+    transform: translateY(-50%);
+  }

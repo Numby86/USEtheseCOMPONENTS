@@ -1,0 +1,59 @@
+.material-checkboxYeah {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #777777;
+  cursor: pointer;
+}
+
+.material-checkboxYeah .iptYeah[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmarkYeah {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  border: 2px solid #454B00;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.material-checkboxYeah .iptYeah[type="checkbox"]:checked ~ .checkmarkYeah {
+  background-color: #2F3300;
+  border-color: #454B00;
+}
+
+.material-checkboxYeah .iptYeah[type="checkbox"]:checked ~ .checkmarkYeah:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.material-checkboxYeah .iptYeah[type="checkbox"]:focus ~ .checkmarkYeah {
+  box-shadow: 0 0 0 2px #dfec5065;
+}
+
+.material-checkboxYeah:hover .iptYeah[type="checkbox"] ~ .checkmarkYeah {
+  border-color: #C3CF34;
+}
+
+.material-checkboxYeah .iptYeah[type="checkbox"]:disabled ~ .checkmarkYeah {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.material-checkboxYeah .iptYeah[type="checkbox"]:disabled ~ .checkmarkYeah:hover {
+  border-color: #4d4d4d;
+}

@@ -1,0 +1,92 @@
+.btn-lock {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    display: inline-block;
+    background: #ff5b5b;
+    width: 64px;
+    height: 64px;
+    box-sizing: border-box;
+    padding: 11px 0 0 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .btn-lock .svgLock {
+    fill: none;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .btn-lock .svgLock .bling {
+    stroke: #fff;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-dasharray: 3;
+    stroke-dashoffset: 15;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-lock .svgLock .lock {
+    stroke: #fff;
+    stroke-width: 4;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 36;
+    transition: all 0.4s ease;
+  }
+  
+  .btn-lock .svgLock .lockb {
+    fill: #fff;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    transform: rotate(8deg);
+    transform-origin: 14px 20px;
+    transition: all 0.2s ease;
+  }
+  
+  #inpLock {
+    display: none;
+  }
+  
+  #inpLock:checked + .btn-lock {
+    background: #20cca5;
+  }
+  
+  #inpLock:checked + .btn-lock .svgLock {
+    opacity: 1;
+  }
+  
+  #inpLock:checked + .btn-lock .svgLock .bling {
+    animation: bling6132 0.3s linear forwards;
+    animation-delay: 0.2s;
+  }
+  
+  #inpLock:checked + .btn-lock .svgLock .lock {
+    stroke-dasharray: 48;
+    animation: locked 0.3s linear forwards;
+  }
+  
+  #inpLock:checked + .btn-lock .svgLock .lockb {
+    transform: rotate(0);
+    transform-origin: 14px 22px;
+  }
+  
+  @keyframes bling6132 {
+    50% {
+      stroke-dasharray: 3;
+      stroke-dashoffset: 12;
+    }
+  
+    100% {
+      stroke-dasharray: 3;
+      stroke-dashoffset: 9;
+    }
+  }
+  
+  @keyframes locked {
+    50% {
+      transform: translateY(1px);
+    }
+  }
+  

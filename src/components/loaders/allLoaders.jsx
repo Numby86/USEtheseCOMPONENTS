@@ -1,30 +1,30 @@
-import LoaderAnimated from './LoaderAnimated/LoaderAnimated';
-import LoaderKinetic from './LoaderKinetic/LoaderKinetic';
-import LoaderNeon from './LoaderNeon/LoaderNeon';
-import LoaderPuzzle from './LoaderPuzzle/LoaderPuzzle';
-import LoaderBalls from './LoaderBalls/LoaderBalls';
-import LoaderHexagonal from './LoaderHexagonal/LoaderHexagonal'
-import LoaderSpinner from './LoaderSpinner/LoaderSpinner';
-import LoaderHastag from './LoaderHastag/LoaderHastag';
-import LoaderStairs from './LoaderStairs/LoaderStairs';
-import LoaderText from './LoaderText/LoaderText';
-import LoaderCard from './LoaderCard/LoaderCard';
-import LoaderHamster from './LoaderHamster/LoaderHamster';
-import LoaderBars from './LoaderBars/LoaderBars';
-import LoaderAlien from './LoaderAlien/LoaderAlien';
-import LoaderClock from './LoaderClock/LoaderClock';
-import LoadeFollow from './LoaderFollow/LoaderFollow';
-import LoaderSmile from './LoaderSmile/LoaderSmile';
-import LoaderPong from './LoaderPong/LoaderPong';
-import LoaderPercentage from './LoaderPercentage/LoaderPercentage';
-import LoaderStarWars from './LoaderStarWars/LoaderStarWars';
+import LoaderAnimated from "./LoaderAnimated/LoaderAnimated";
+import LoaderKinetic from "./LoaderKinetic/LoaderKinetic";
+import LoaderNeon from "./LoaderNeon/LoaderNeon";
+import LoaderPuzzle from "./LoaderPuzzle/LoaderPuzzle";
+import LoaderBalls from "./LoaderBalls/LoaderBalls";
+import LoaderHexagonal from "./LoaderHexagonal/LoaderHexagonal";
+import LoaderSpinner from "./LoaderSpinner/LoaderSpinner";
+import LoaderHastag from "./LoaderHastag/LoaderHastag";
+import LoaderStairs from "./LoaderStairs/LoaderStairs";
+import LoaderText from "./LoaderText/LoaderText";
+import LoaderCard from "./LoaderCard/LoaderCard";
+import LoaderHamster from "./LoaderHamster/LoaderHamster";
+import LoaderBars from "./LoaderBars/LoaderBars";
+import LoaderAlien from "./LoaderAlien/LoaderAlien";
+import LoaderClock from "./LoaderClock/LoaderClock";
+import LoadeFollow from "./LoaderFollow/LoaderFollow";
+import LoaderSmile from "./LoaderSmile/LoaderSmile";
+import LoaderPong from "./LoaderPong/LoaderPong";
+import LoaderPercentage from "./LoaderPercentage/LoaderPercentage";
+import LoaderStarWars from "./LoaderStarWars/LoaderStarWars";
 
 export const allLoaders = [
-    {
-        id: 1,
-        component: <LoaderAnimated />, 
-        name: 'Animated', 
-        html: `<svg className="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+  {
+    id: 1,
+    component: <LoaderAnimated />,
+    name: "Animated",
+    html: `<svg className="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stop-color="hsl(193,90%,55%)" />
@@ -37,8 +37,8 @@ export const allLoaders = [
             d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z"
             fill="none" stroke="url(#pl-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"
             stroke-dasharray="44 1111" stroke-dashoffset="10" />
-    </svg>`, 
-        scss: `
+    </svg>`,
+    scss: `
         :root {
             --hue: 223;
             --bg: hsl(var(--hue), 10%, 90%);
@@ -143,15 +143,15 @@ export const allLoaders = [
                 stroke-dashoffset: 1165;
             }
         }
-        `
-    }, 
-        {
-        id: 2, 
-        component: <LoaderKinetic />, 
-        name: 'Kinetic', 
-        html: `<div className="kinetic">
-        </div>`, 
-        scss: `.kinetic {
+        `,
+  },
+  {
+    id: 2,
+    component: <LoaderKinetic />,
+    name: "Kinetic",
+    html: `<div className="kinetic">
+        </div>`,
+    scss: `.kinetic {
             position: relative;
             height: 80px;
             width: 80px;
@@ -206,15 +206,15 @@ export const allLoaders = [
               transform: rotate(450deg);
             }
           }
-          `
-    }, 
-        {
-        id: 3, 
-        component: <LoaderNeon />, 
-        name: 'Neon', 
-        html: `<div className='loader'>
-        </div>`, 
-        scss: `.loader{
+          `,
+  },
+  {
+    id: 3,
+    component: <LoaderNeon />,
+    name: "Neon",
+    html: `<div className='loader'>
+        </div>`,
+    scss: `.loader{
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -245,13 +245,13 @@ export const allLoaders = [
             to {
                 transform: rotate(360deg);
             }
-        }`
-    }, 
-        {
-        id: 4, 
-        component: <LoaderPuzzle />, 
-        name: 'Puzzle', 
-        html: `<div className="banter-loader">
+        }`,
+  },
+  {
+    id: 4,
+    component: <LoaderPuzzle />,
+    name: "Puzzle",
+    html: `<div className="banter-loader">
         <div className="banter-loader__box"></div>
         <div className="banter-loader__box"></div>
         <div className="banter-loader__box"></div>
@@ -261,8 +261,8 @@ export const allLoaders = [
         <div className="banter-loader__box"></div>
         <div className="banter-loader__box"></div>
         <div className="banter-loader__box"></div>
-    </div>`, 
-        scss: `.banter-loader {
+    </div>`,
+    scss: `.banter-loader {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -755,19 +755,19 @@ export const allLoaders = [
           
           .banter-loader__box:nth-child(9) {
             animation: moveBox-9 4s infinite;
-          }`
-    }, 
-        {
-        id: 5, 
-        component: <LoaderBalls/>, 
-        name: 'Balls', 
-        html: `<div class="newtons-cradle">
+          }`,
+  },
+  {
+    id: 5,
+    component: <LoaderBalls />,
+    name: "Balls",
+    html: `<div class="newtons-cradle">
         <div class="newtons-cradle__dot"></div>
         <div class="newtons-cradle__dot"></div>
         <div class="newtons-cradle__dot"></div>
         <div class="newtons-cradle__dot"></div>
-        </div>`, 
-        scss: `.newtons-cradle {
+        </div>`,
+    scss: `.newtons-cradle {
           --uib-size: 50px;
           --uib-speed: 1.2s;
           --uib-color: #474554;
@@ -838,13 +838,13 @@ export const allLoaders = [
            animation-timing-function: ease-in;
           }
          }
-         `
-    }, 
-        {
-        id: 6, 
-        component: <LoaderHexagonal/>, 
-        name: 'hexagonal', 
-        html: `
+         `,
+  },
+  {
+    id: 6,
+    component: <LoaderHexagonal />,
+    name: "hexagonal",
+    html: `
         <div class="socket">
           <div class="gel center-gel">
             <div class="hex-brick h1"></div>
@@ -1035,8 +1035,8 @@ export const allLoaders = [
           </div>
           
         </div>
-      `, 
-        scss: `.socket {
+      `,
+    scss: `.socket {
           width: 200px;
           height: 200px;
           position: absolute;
@@ -1372,15 +1372,15 @@ export const allLoaders = [
             background: #353535;
           }
         }
-        `
-    }, 
-            {
-        id: 7, 
-        component: <LoaderSpinner/>, 
-        name: 'LoaderSpinner', 
-        html: `<div class="spinner"></div>
-        `, 
-        scss: `.spinner {
+        `,
+  },
+  {
+    id: 7,
+    component: <LoaderSpinner />,
+    name: "LoaderSpinner",
+    html: `<div class="spinner"></div>
+        `,
+    scss: `.spinner {
           width: 56px;
           height: 56px;
           display: grid;
@@ -1414,15 +1414,15 @@ export const allLoaders = [
           100% {
             transform: rotate(1turn);
           }
-        }`
-    }, 
-            {
-        id: 8, 
-        component: <LoaderHastag/>, 
-        name: 'Hastag', 
-        html: `
-        <div class="loader"></div>`, 
-        scss: `.loader {
+        }`,
+  },
+  {
+    id: 8,
+    component: <LoaderHastag />,
+    name: "Hastag",
+    html: `
+        <div class="loader"></div>`,
+    scss: `.loader {
           position: relative;
           width: 2.5em;
           height: 2.5em;
@@ -1495,14 +1495,14 @@ export const allLoaders = [
           position: absolute;
           top: calc(50% - 1.25em);
           left: calc(50% - 1.25em);
-         }`
-    }, 
-            {
-        id: 9, 
-        component: <LoaderStairs/>, 
-        name: 'Stairs', 
-        html: `<div class="loader"></div>`, 
-        scss: `.loader {
+         }`,
+  },
+  {
+    id: 9,
+    component: <LoaderStairs />,
+    name: "Stairs",
+    html: `<div class="loader"></div>`,
+    scss: `.loader {
           position: relative;
           width: 120px;
           height: 90px;
@@ -1565,19 +1565,19 @@ export const allLoaders = [
                     -70px 90px 0 #f2f2f2,
                     -70px 90px 0 rgba(0, 0, 0, 0);
           }
-        }`
-    }, 
-            {
-        id: 10, 
-        component: <LoaderText/>, 
-        name: 'Text', 
-        html: `
+        }`,
+  },
+  {
+    id: 10,
+    component: <LoaderText />,
+    name: "Text",
+    html: `
         <div class="loader">
           <span class="loader-text">loading</span>
             <span class="load"></span>
         </div>
-      `, 
-        scss: `.loader {
+      `,
+    scss: `.loader {
           width: 80px;
           height: 50px;
           position: relative;
@@ -1699,13 +1699,13 @@ export const allLoaders = [
          
          
         
-        `
-    }, 
-            {
-        id: 11, 
-        component: <LoaderCard/>, 
-        name: 'LoaderCard', 
-        html: `<div class="loader">
+        `,
+  },
+  {
+    id: 11,
+    component: <LoaderCard />,
+    name: "LoaderCard",
+    html: `<div class="loader">
         <div class="wrapper">
           <div class="circle"></div>
           <div class="line-1"></div>
@@ -1713,8 +1713,8 @@ export const allLoaders = [
           <div class="line-3"></div>
           <div class="line-4"></div>
         </div>
-      </div>`, 
-        scss: `.loader {
+      </div>`,
+    scss: `.loader {
           position: relative;
           width: 240px;
           height: 130px;
@@ -1798,13 +1798,13 @@ export const allLoaders = [
           100% {
             transform: translateX(100%);
           }
-        }`
-    }, 
-            {
-        id: 12, 
-        component: <LoaderHamster/>, 
-        name: 'Hamster', 
-        html: `<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        }`,
+  },
+  {
+    id: 12,
+    component: <LoaderHamster />,
+    name: "Hamster",
+    html: `<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
         <div class="wheel"></div>
         <div class="hamster">
           <div class="hamster__body">
@@ -1821,8 +1821,8 @@ export const allLoaders = [
           </div>
         </div>
         <div class="spoke"></div>
-      </div>`, 
-        scss: `.wheel-and-hamster {
+      </div>`,
+    scss: `.wheel-and-hamster {
           --dur: 1s;
           position: relative;
           width: 12em;
@@ -2093,20 +2093,20 @@ export const allLoaders = [
           to {
             transform: rotate(-1turn);
           }
-        }`
-    }, 
-            {
-        id: 13, 
-        component: <LoaderBars/>, 
-        name: 'bars', 
-        html: `<div class="loading">
+        }`,
+  },
+  {
+    id: 13,
+    component: <LoaderBars />,
+    name: "bars",
+    html: `<div class="loading">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-      </div>`, 
-        scss: `.loading {
+      </div>`,
+    scss: `.loading {
           --speed-of-animation: 0.9s;
           --gap: 6px;
           --first-color: #4c86f9;
@@ -2157,14 +2157,14 @@ export const allLoaders = [
           20% {
            transform: scaleY(1);
           }
-         }`
-    }, 
-            {
-        id: 14, 
-        component: <LoaderAlien/>, 
-        name: 'alien', 
-        html: `<div class="spinner"></div>`, 
-        scss: `/* Normal Usage */
+         }`,
+  },
+  {
+    id: 14,
+    component: <LoaderAlien />,
+    name: "alien",
+    html: `<div class="spinner"></div>`,
+    scss: `/* Normal Usage */
         .spinner:before {
           transform: rotateX(60deg) rotateY(45deg) rotateZ(45deg);
           animation: 750ms rotateBefore infinite linear reverse;
@@ -2212,18 +2212,18 @@ export const allLoaders = [
           to {
             transform: rotateX(240deg) rotateY(45deg) rotateZ(360deg);
           }
-        }`
-    }, 
-            {
-        id: 15, 
-        component: <LoaderClock/>, 
-        name: 'clock', 
-        html: `<div class="loader">
+        }`,
+  },
+  {
+    id: 15,
+    component: <LoaderClock />,
+    name: "clock",
+    html: `<div class="loader">
         <span class="hour"></span>
         <span class="min"></span>
         <span class="circel"></span>
-      </div>`, 
-        scss: `.loader {
+      </div>`,
+    scss: `.loader {
           width: 65px;
           height: 65px;
           border: 8px solid #ee9b00a6;
@@ -2270,20 +2270,20 @@ export const allLoaders = [
           100% {
            transform: rotate(360deg);
           }
-         }`
-    }, 
-            {
-        id: 16, 
-        component: <LoadeFollow/>, 
-        name: 'follow', 
-        html: `<div class="follow-the-leader-line">
+         }`,
+  },
+  {
+    id: 16,
+    component: <LoadeFollow />,
+    name: "follow",
+    html: `<div class="follow-the-leader-line">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
-      </div>`, 
-        scss: `@-webkit-keyframes follow-the-leader {
+      </div>`,
+    scss: `@-webkit-keyframes follow-the-leader {
           0% {
             -webkit-transform: rotate(0deg) translateY(-200%);
             transform: rotate(0deg) translateY(-200%);
@@ -2352,13 +2352,13 @@ export const allLoaders = [
           -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
           background-color: rgba(255, 255, 255, 0.5);
-        }`
-    }, 
-                {
-        id: 17, 
-        component: <LoaderSmile/>, 
-        name: 'Smile', 
-        html: `<svg class="gegga">
+        }`,
+  },
+  {
+    id: 17,
+    component: <LoaderSmile />,
+    name: "Smile",
+    html: `<svg class="gegga">
         <defs>
             <filter id="gegga">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"></feGaussianBlur>
@@ -2381,8 +2381,8 @@ export const allLoaders = [
     <svg class="skugga" width="200" height="200" viewBox="0 0 200 200">
         <path class="halvan" d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"></path>
         <circle class="strecken" cx="100" cy="100" r="64"></circle>
-    </svg>`, 
-        scss: `.gegga {
+    </svg>`,
+    scss: `.gegga {
           width: 0;
         }
         
@@ -2432,14 +2432,14 @@ export const allLoaders = [
             stroke-dashoffset: -403px;
           }
         }
-        `
-    }, 
-                {
-        id: 18, 
-        component: <LoaderPong/>, 
-        name: 'pong', 
-        html: `<div class="loader"></div>`, 
-        scss: `.loader {
+        `,
+  },
+  {
+    id: 18,
+    component: <LoaderPong />,
+    name: "pong",
+    html: `<div class="loader"></div>`,
+    scss: `.loader {
           position: relative;
           height: 40px;
           width: 6px;
@@ -2496,14 +2496,14 @@ export const allLoaders = [
             transform: translateX(-20px)
           }
         }
-              `
-    }, 
-                {
-        id: 19, 
-        component: <LoaderPercentage/>, 
-        name: 'Percentage', 
-        html: `<div class="loader"></div>`, 
-        scss: `.loader {
+              `,
+  },
+  {
+    id: 19,
+    component: <LoaderPercentage />,
+    name: "Percentage",
+    html: `<div class="loader"></div>`,
+    scss: `.loader {
           display: block;
           position: relative;
           height: 32px;
@@ -2620,13 +2620,13 @@ export const allLoaders = [
           }
         }
           
-          `
-    }, 
-                {
-        id: 20, 
-        component: <LoaderStarWars/>, 
-        name: 'StarWars', 
-        html: `<div id="loader">
+          `,
+  },
+  {
+    id: 20,
+    component: <LoaderStarWars />,
+    name: "StarWars",
+    html: `<div id="loader">
         <div class="ls-particles ls-part-1"></div>
         <div class="ls-particles ls-part-2"></div>
         <div class="ls-particles ls-part-3"></div>
@@ -2634,8 +2634,8 @@ export const allLoaders = [
         <div class="ls-particles ls-part-5"></div>
         <div class="lightsaber ls-left ls-green"></div>
         <div class="lightsaber ls-right ls-red"></div>
-      </div>`, 
-        scss: `#loader {
+      </div>`,
+    scss: `#loader {
           width: 80px;
           height: 40px;
           position: absolute;
@@ -3362,13 +3362,13 @@ export const allLoaders = [
             -webkit-transform: rotateZ(65deg) translateY(-35px);
             transform: rotateZ(65deg) translateY(-35px);
           }
-        }`
-    }, 
-                // {
-    //     id: , 
-    //     component: , 
-    //     name: '', 
-    //     html: ``, 
-    //     scss: ``
-    // }, 
-]
+        }`,
+  },
+  // {
+  //     id: ,
+  //     component: ,
+  //     name: '',
+  //     html: ``,
+  //     scss: ``
+  // },
+];

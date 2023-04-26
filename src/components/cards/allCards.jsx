@@ -20,11 +20,11 @@ import CardContent from "./CardContent/CardContent";
 import Card3D from "./Card3D/Card3D";
 
 export const allCards = [
-    {
-        id: 1, 
-        component: <CardMinimal/>, 
-        name: 'Minimal', 
-        html: `<div class="card">
+  {
+    id: 1,
+    component: <CardMinimal />,
+    name: "Minimal",
+    html: `<div class="card">
         <div class="tools">
           <div class="circle">
             <span class="red box"></span>
@@ -38,8 +38,8 @@ export const allCards = [
         </div>
         <div class="card__content">
         </div>
-      </div>`, 
-        scss: `.card {
+      </div>`,
+    scss: `.card {
           width: 190px;
           height: 254px;
           margin: 0 auto;
@@ -78,18 +78,18 @@ export const allCards = [
          .green {
           background-color: #00ca4e;
          }
-         `
-    }, 
-    {
-        id: 2, 
-        component: <CardTurn/>, 
-        name: 'Turn', 
-        html: `<div id="card" class="card">
+         `,
+  },
+  {
+    id: 2,
+    component: <CardTurn />,
+    name: "Turn",
+    html: `<div id="card" class="card">
         <div class="content">
           <span>HOVER ME</span>
         </div>
-      </div>`, 
-        scss: `.card {
+      </div>`,
+    scss: `.card {
             width: 190px;
             height: 254px;
             background: #171717;
@@ -165,18 +165,18 @@ export const allCards = [
             100% {
               transform: rotate(360deg);
             }
-          }`
-    }, 
-    {
-        id:3, 
-        component: <CardMagic/>, 
-        name: 'Magic Card', 
-        html: `<div class="card">
+          }`,
+  },
+  {
+    id: 3,
+    component: <CardMagic />,
+    name: "Magic Card",
+    html: `<div class="card">
         <div class="card-info">
           <p class="title">Magic Card</p>
         </div>
-      </div>`, 
-        scss: `.card {
+      </div>`,
+    scss: `.card {
             --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
             width: 190px;
             height: 254px;
@@ -232,19 +232,19 @@ export const allCards = [
             color: #f7ba2b;
             transition: color 1s;
            }
-           `
-    }, 
-    {
-        id: 4,
-        component: <CardBook/>, 
-        name: 'Book', 
-        html: ` <div class="book">
+           `,
+  },
+  {
+    id: 4,
+    component: <CardBook />,
+    name: "Book",
+    html: ` <div class="book">
         <p>Hello</p>
         <div class="cover">
             <p>Hover Me</p>
         </div>
-       </div>`, 
-        scss: `.book {
+       </div>`,
+    scss: `.book {
           position: relative;
           border-radius: 10px;
           width: 220px;
@@ -306,18 +306,18 @@ export const allCards = [
         p {
           font-size: 20px;
           font-weight: bolder;
-        }`
-    }, 
-        {
-        id: 5,
-        component: <CardTriple/>, 
-        name: 'Triple', 
-        html: `<div class="card">
+        }`,
+  },
+  {
+    id: 5,
+    component: <CardTriple />,
+    name: "Triple",
+    html: `<div class="card">
         <p><span>HOVER ME</span></p>
         <p><span>HOVER ME</span></p>
         <p><span>HOVER ME</span></p>
-    </div>`, 
-        scss: `.card {
+    </div>`,
+    scss: `.card {
           width: 210px;
           height: 254px;
           border-radius: 4px;
@@ -358,16 +358,16 @@ export const allCards = [
         
         .card p:hover span {
           transform: rotate(0);
-        }`
-    }, 
-        {
-        id: 6,
-        component: <CardMoveOn/>, 
-        name: 'MoveOn', 
-        html: `<div class="card">
+        }`,
+  },
+  {
+    id: 6,
+    component: <CardMoveOn />,
+    name: "MoveOn",
+    html: `<div class="card">
         <h2>CARD</h2>
-    </div>`, 
-        scss: `.card {
+    </div>`,
+    scss: `.card {
           width: 190px;
           height: 254px;
           background: #07182E;
@@ -418,13 +418,13 @@ export const allCards = [
           animation: rotBGimg 3.5s linear infinite;
         } */
         
-        `
-    }, 
-        {
-        id: 7,
-        component: <CardSkills/>, 
-        name: 'Skills', 
-        html: `<div class="card">
+        `,
+  },
+  {
+    id: 7,
+    component: <CardSkills />,
+    name: "Skills",
+    html: `<div class="card">
         <div class="header">My Skills</div>
         <div class="body">
           <div class="skill">
@@ -450,8 +450,8 @@ export const allCards = [
           </div>
         </div>
       </div>
-      `, 
-        scss: `.card {
+      `,
+    scss: `.card {
           width: 300px;
           background-color: #fff;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -500,13 +500,13 @@ export const allCards = [
           margin-left: 20px;
           font-size: 16px;
         }
-        `
-    }, 
-        {
-        id: 8,
-        component: <CardTarget/>, 
-        name: 'Target', 
-        html: `<div class="card">
+        `,
+  },
+  {
+    id: 8,
+    component: <CardTarget />,
+    name: "Target",
+    html: `<div class="card">
         <label class="avatar"></label>
         <label class="info">
           <span class="info-1"></span>
@@ -514,8 +514,8 @@ export const allCards = [
         </label>
         <div class="content-1"></div>
         <div class="content-2"></div>
-      </div>`, 
-        scss: `.card {
+      </div>`,
+    scss: `.card {
           width: 190px;
           height: 190px;
           border-radius: 44px;
@@ -569,13 +569,13 @@ export const allCards = [
           background: rgba(255,255,255,0.9);
           height: 18px;
           margin: 10px 0 0 20px;
-        }`
-    }, 
-        {
-        id: 9,
-        component: <CardFlip/>, 
-        name: 'Flip', 
-        html: `<div class="flip-card">
+        }`,
+  },
+  {
+    id: 9,
+    component: <CardFlip />,
+    name: "Flip",
+    html: `<div class="flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front">
                 <p class="title">FLIP CARD</p>
@@ -586,8 +586,8 @@ export const allCards = [
                 <p>Leave Me</p>
             </div>
         </div>
-    </div>`, 
-        scss: `.flip-card {
+    </div>`,
+    scss: `.flip-card {
           background-color: transparent;
           width: 190px;
           height: 254px;
@@ -640,14 +640,14 @@ export const allCards = [
              bisque 40%, rgb(255, 185, 160) 78%);
           color: white;
           transform: rotateY(180deg);
-        }`
-    }, 
-        {
-        id: 10,
-        component: <CardCorners/>, 
-        name: 'Corners', 
-        html: `<div class="card">HOVER</div>`, 
-        scss: `.card {
+        }`,
+  },
+  {
+    id: 10,
+    component: <CardCorners />,
+    name: "Corners",
+    html: `<div class="card">HOVER</div>`,
+    scss: `.card {
   position: relative;
   width: 220px;
   height: 320px;
@@ -698,13 +698,13 @@ export const allCards = [
 
 .card:hover:after {
   content: "HELLO";
-}`
-    }, 
-        {
-        id: 11,
-        component: <CardMusic/>, 
-        name: 'Music', 
-        html: `<div className="voice-chat-card">
+}`,
+  },
+  {
+    id: 11,
+    component: <CardMusic />,
+    name: "Music",
+    html: `<div className="voice-chat-card">
         <div className="voice-chat-card-header">
           <img className="avatarMusic" alt='' />
           <div className="usernameMusic">User name</div>
@@ -719,8 +719,8 @@ export const allCards = [
             </audio>
           </div>
         </div>
-      </div>`, 
-        scss: `.voice-chat-card {
+      </div>`,
+    scss: `.voice-chat-card {
           width: 300px;
           margin: 20px auto;
           border: 1px solid #ccc;
@@ -776,16 +776,16 @@ export const allCards = [
         audio {
           width: 100%;
         }
-        `
-    }, 
-        {
-        id: 12,
-        component: <CardMargin/>, 
-        name: 'Margin', 
-        html: `<div class="card">
+        `,
+  },
+  {
+    id: 12,
+    component: <CardMargin />,
+    name: "Margin",
+    html: `<div class="card">
         <div class="content"></div>
-    </div>`, 
-        scss: `.card {
+    </div>`,
+    scss: `.card {
           width: 190px;
           height: 254px;
           border-radius: 10px;
@@ -814,16 +814,16 @@ export const allCards = [
         .card :hover {
           border: 1px solid #7a2727;
         }
-        `
-    }, 
-        {
-        id: 13,
-        component: <CardRadiactive/>, 
-        name: 'Radiactive', 
-        html: `<div class="card">
+        `,
+  },
+  {
+    id: 13,
+    component: <CardRadiactive />,
+    name: "Radiactive",
+    html: `<div class="card">
         <div class="card-info"><p>Hover</p></div>
-      </div>`, 
-        scss: `.card {
+      </div>`,
+    scss: `.card {
           width: 200px;
           height: 270px;
           background: linear-gradient(45deg,#00cc0a 25%, #00cc0a 25%, #444 25%, #444 50%, #00cc0a 50%, #00cc0a 75%, #444 75%, #444 100%);
@@ -872,15 +872,15 @@ export const allCards = [
           100% {
             background-position: 1000px;
           }
-        }`
-    }, 
-        {
-        id: 14,
-        component: <CardPill/>, 
-        name: 'Pill', 
-        html: `<div class="card">
-        </div>`, 
-        scss: `/*Rainbow card*/
+        }`,
+  },
+  {
+    id: 14,
+    component: <CardPill />,
+    name: "Pill",
+    html: `<div class="card">
+        </div>`,
+    scss: `/*Rainbow card*/
         .card {
          --background: #f5f5f5;
          --green: #1FC11B;
@@ -910,20 +910,20 @@ export const allCards = [
               0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
               0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
               0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
-        }`
-    }, 
-        {
-        id: 15,
-        component: <CardLines/>, 
-        name: 'Lines', 
-        html: `<div class="container">
+        }`,
+  },
+  {
+    id: 15,
+    component: <CardLines />,
+    name: "Lines",
+    html: `<div class="container">
         <div class="box">
           <div class="content">
             
           </div>
         </div>
-      </div>`, 
-        scss: `.container {
+      </div>`,
+    scss: `.container {
           --background: linear-gradient(to left, #880505 0%, #f36b11 100%);
           width: 190px;
           height: 254px;
@@ -1045,14 +1045,14 @@ export const allCards = [
         .container .box .content {
           border-radius: 50%;
         }
-        `
-    }, 
-        {
-        id: 16,
-        component: <CardPhoto/>, 
-        name: 'Photo', 
-        html: `<div class="card">Hover me</div>`, 
-        scss: `.card {
+        `,
+  },
+  {
+    id: 16,
+    component: <CardPhoto />,
+    name: "Photo",
+    html: `<div class="card">Hover me</div>`,
+    scss: `.card {
           width: 200px;
           height: 300px;
           background: #ffffff;
@@ -1074,18 +1074,18 @@ export const allCards = [
           background: lightcoral;
           color: #fff;
           font-size: 1.5rem;
-        }`
-    }, 
-        {
-        id: 17,
-        component: <CardBlurBalls/>, 
-        name: 'BlurBalls', 
-        html: `<div class="container">
+        }`,
+  },
+  {
+    id: 17,
+    component: <CardBlurBalls />,
+    name: "BlurBalls",
+    html: `<div class="container">
         <div class="card">
           hover
         </div>
-      </div>`, 
-        scss: `.container {
+      </div>`,
+    scss: `.container {
           width: 190px;
           height: 254px;
           background: transparent;
@@ -1153,15 +1153,15 @@ export const allCards = [
         .container:hover::before {
           left: -10px;
           transform: scale(1.2);
-        }`
-    }, 
-        {
-        id: 18,
-        component: <CardColors/>, 
-        name: 'Colors', 
-        html: `
-        <div class="card"></div>`, 
-        scss: `.card {
+        }`,
+  },
+  {
+    id: 18,
+    component: <CardColors />,
+    name: "Colors",
+    html: `
+        <div class="card"></div>`,
+    scss: `.card {
           width: 190px;
           height: 254px;
           background: linear-gradient(135deg, #ff85ec 0%, #84ff98 100%);
@@ -1170,16 +1170,16 @@ export const allCards = [
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
           border: 1px solid rgba(255, 255, 255, 0.3);
-         }`
-    }, 
-        {
-        id: 19,
-        component: <CardContent/>, 
-        name: 'Content', 
-        html: `<div class="card">
+         }`,
+  },
+  {
+    id: 19,
+    component: <CardContent />,
+    name: "Content",
+    html: `<div class="card">
         <div></div>
-        </div>`, 
-        scss: `.card {
+        </div>`,
+    scss: `.card {
           width: 190px;
           height: 254px;
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
@@ -1215,13 +1215,13 @@ export const allCards = [
          
          .card:hover div {
           transform: translateY(-30px);
-         }`
-    }, 
-        {
-        id: 20,
-        component: <Card3D/>, 
-        name: '3D', 
-        html: `<div class="flip">
+         }`,
+  },
+  {
+    id: 20,
+    component: <Card3D />,
+    name: "3D",
+    html: `<div class="flip">
         <div class="content">
             <div class="front">
                 <h2>Front</h2>
@@ -1232,8 +1232,8 @@ export const allCards = [
                 <p>Back Description</p>
             </div>
         </div>
-    </div>`, 
-        scss: `.flip {
+    </div>`,
+    scss: `.flip {
           box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
           padding: 1em;
           width: 190px;
@@ -1306,13 +1306,13 @@ export const allCards = [
           background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;
-        }`
-    }, 
-        // {
-    //     id: ,
-    //     component: , 
-    //     name: '', 
-    //     html: ``, 
-    //     scss: ``
-    // }, 
-]
+        }`,
+  },
+  // {
+  //     id: ,
+  //     component: ,
+  //     name: '',
+  //     html: ``,
+  //     scss: ``
+  // },
+];

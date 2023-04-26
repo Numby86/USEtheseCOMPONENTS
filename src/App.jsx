@@ -31,13 +31,14 @@ import ListToggles from './views/lists/ListToggles';
 
 function App() {
 
-  const listButtons = allButtons.sort(() => Math.random() - 0.5);
-  const listCards = allCards.sort(() => Math.random() - 0.5);
-  const listCheckboxes = allCheckboxes.sort(() => Math.random() - 0.5);
-  const listInputs = allInputs.sort(() => Math.random() - 0.5);
-  const listLoaders = allLoaders.sort(() => Math.random() - 0.5);
-  const listRadios = allRadios.sort(() => Math.random() - 0.5);
-  const listToggles = allToggles.sort(() => Math.random() - 0.5);
+  const disorder = (arr) =>  arr.sort(() => Math.random() - 0.5);
+  const listButtons = disorder(allButtons);
+  const listCards = disorder(allCards);
+  const listCheckboxes = disorder(allCheckboxes);
+  const listInputs = disorder(allInputs);
+  const listLoaders = disorder(allLoaders);
+  const listRadios = disorder(allRadios);
+  const listToggles = disorder(allToggles);
 
   return (
     <div className="App">
