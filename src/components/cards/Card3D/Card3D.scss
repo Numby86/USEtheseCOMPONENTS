@@ -1,0 +1,74 @@
+.flip3D {
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    padding: 1em;
+    width: 190px;
+    height: 254px;
+    transform-style: preserve-3d;
+    transition: 3s ease;
+  }
+  
+  .flip3D:hover {
+    transform: rotateY(180deg);
+  }
+  /* Content */
+  .flip3D .content3D {
+    transform-style: preserve-3d;
+  }
+  
+  .flip3D .back3D, .flip3D .front3D {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flip3D .back3D {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .flip3D .h23D,
+  .flip3D .p3D {
+    transform: translateZ(90px);
+    text-shadow: 0 0 3px black;
+    text-align: center;
+  }
+  
+  .flip3D .h23D {
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .flip3D .p3D {
+    font-size: 1em;
+    color: #eee;
+    line-height: 1.6em;
+  }
+  
+  .flip3D::before,
+  .flip3D::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-image: linear-gradient(purple, red);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateY(180deg)translateZ(1px);
+  }
+  
+  .flip3D::before {
+    transform: none;
+    background-image: linear-gradient(violet, orange);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

@@ -6,9 +6,9 @@ import ButtonScaner from "./ButtonScaner/ButtonScaner";
 import ButtonTricolor from "./ButtonTricolor/ButtonTricolor";
 import ButtonBlur from "./ButtonBlur/ButtonBlur";
 import ButtonSpace from "./ButtonSpace/ButtonSpace";
-import ButtonRainbow from './ButtonRainbow/ButtonRainbow';
+import ButtonRainbow from "./ButtonRainbow/ButtonRainbow";
 import ButtonAniNeon from "./ButtonAniNeon/ButtonAniNeon";
-import ButtonBatman from './ButtonBatman/ButtonBatman';
+import ButtonBatman from "./ButtonBatman/ButtonBatman";
 import ButtonCrush from "./ButtonCrush/ButtonCrush";
 import ButtonAirport from "./ButtonAirport/ButtonAirport";
 import ButtonStars from "./ButtonStars/ButtonStars";
@@ -19,14 +19,12 @@ import ButtonHeart from "./ButtonHeart/ButtonHeart";
 import ButtonMove from "./ButtonMove/ButtonMove";
 import ButtonLamp from "./ButtonLamp/ButtonLamp";
 
-
-
 export const allButtons = [
   {
     id: 1,
     component: <ButtonGlitch />,
-    name: "Glitch", 
-    html: `<button className='glitch'> GLITCH </button>`, 
+    name: "Glitch",
+    html: `<button className='glitch'> GLITCH </button>`,
     scss: `.glitch, .glitch::after {
       padding: 10px 50px;
       font-size: 20px;
@@ -131,14 +129,14 @@ export const allButtons = [
         transform: translate(0);
       }
     }
-    `
+    `,
   },
   {
     id: 2,
     component: <ButtonNeon />,
-    name: "Neon", 
+    name: "Neon",
     html: `<button> Button
-    </button>`, 
+    </button>`,
     scss: `button {
       --glow-color: rgb(217, 176, 255);
       --glow-spread-color: rgba(191, 123, 255, 0.781);
@@ -186,7 +184,7 @@ export const allButtons = [
       box-shadow: 0 0 0.6em .25em var(--glow-color),
              0 0 2.5em 2em var(--glow-spread-color),
              inset 0 0 .5em .25em var(--glow-color);
-     }`
+     }`,
   },
   {
     id: 3,
@@ -271,15 +269,15 @@ export const allButtons = [
       }
      }`,
   },
-          {
-        id: 4,
-        component: <ButtonScaner/>, 
-        name: 'Scaner', 
-        html: `<button data-text="Awesome" class="button">
+  {
+    id: 4,
+    component: <ButtonScaner />,
+    name: "Scaner",
+    html: `<button data-text="Awesome" class="button">
         <span class="actual-text">&nbsp;uiverse&nbsp;</span>
         <span class="hover-text" aria-hidden="true">&nbsp;uiverse&nbsp;</span>
-    </button>`, 
-        scss: `/* === removing default button style ===*/
+    </button>`,
+    scss: `/* === removing default button style ===*/
         .button {
           margin: 0;
           height: auto;
@@ -320,13 +318,13 @@ export const allButtons = [
         .button:hover .hover-text {
           width: 100%;
           filter: drop-shadow(0 0 23px var(--animation-color))
-        }`
-    }, 
-              {
-        id: 5,
-        component: <ButtonFuture/>, 
-        name: 'Future', 
-        html: `<button className="cta">
+        }`,
+  },
+  {
+    id: 5,
+    component: <ButtonFuture />,
+    name: "Future",
+    html: `<button className="cta">
         <span className="spanFuture">NEXT</span>
         <span className="second">
           <svg width="50px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -337,8 +335,8 @@ export const allButtons = [
             </g>
           </svg>
         </span> 
-    </button>`, 
-        scss: `.cta {
+    </button>`,
+    scss: `.cta {
           display: flex;
           padding: 11px 33px;
           text-decoration: none;
@@ -418,15 +416,15 @@ export const allButtons = [
           100% {
             fill: white;
           }
-        }`
-    }, 
-              {
-        id: 6,
-        component: <ButtonTricolor/>, 
-        name: 'btnTricolor', 
-        html: `<button class="btn">Hover Me!
-        </button>`, 
-        scss: `.btn {
+        }`,
+  },
+  {
+    id: 6,
+    component: <ButtonTricolor />,
+    name: "btnTricolor",
+    html: `<button class="btn">Hover Me!
+        </button>`,
+    scss: `.btn {
           width: 130px;
           height: 40px;
           font-size: 1.1em;
@@ -452,14 +450,14 @@ export const allButtons = [
           box-shadow: 0 2px 0 -2px #f85959,
            0 8px 0 -4px #39a2db,
            0 12px 10px -3px #39a2db;
-         }`
-    }, 
-              {
-        id: 7,
-        component: <ButtonBlur/>, 
-        name: 'Blur', 
-        html: `<button class="bn">Hover!</button>`, 
-        scss: `button {
+         }`,
+  },
+  {
+    id: 7,
+    component: <ButtonBlur />,
+    name: "Blur",
+    html: `<button class="bn">Hover!</button>`,
+    scss: `button {
           --border-radius: 25px;
           --border-width: 7px;
           appearance: none;
@@ -600,13 +598,13 @@ export const allButtons = [
         .bn:active {
           color: #000;
           font-weight: bold;
-        }`
-    }, 
-              {
-        id: 8,
-        component: <ButtonSpace/>, 
-        name: 'Space', 
-        html: `<button class="btn" type="button">
+        }`,
+  },
+  {
+    id: 8,
+    component: <ButtonSpace />,
+    name: "Space",
+    html: `<button class="btn" type="button">
         <strong>SPACE</strong>
         <div id="container-stars">
           <div id="stars"></div>
@@ -617,8 +615,8 @@ export const allButtons = [
           <div class="circle"></div>
         </div>
       </button>
-      `, 
-        scss: `.btn {
+      `,
+    scss: `.btn {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -784,16 +782,16 @@ export const allButtons = [
             transform: scale(0.75);
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
           }
-        }`
-    }, 
-              {
-        id: 9,
-        component: <ButtonRainbow/>, 
-        name: 'Rainbow', 
-        html: `<button>
+        }`,
+  },
+  {
+    id: 9,
+    component: <ButtonRainbow />,
+    name: "Rainbow",
+    html: `<button>
         Join now
-    </button>`, 
-        scss: `/* this button is inspired from this -- https://www.newline.co/pricing */
+    </button>`,
+    scss: `/* this button is inspired from this -- https://www.newline.co/pricing */
         button {
           --width: 150px;
           --timing: 2s;
@@ -820,19 +818,19 @@ export const allButtons = [
           }
         }
         
-        `
-    }, 
-              {
-        id: 10,
-        component: <ButtonAniNeon />, 
-        name: 'AniNeon ', 
-        html: `<button>
+        `,
+  },
+  {
+    id: 10,
+    component: <ButtonAniNeon />,
+    name: "AniNeon ",
+    html: `<button>
         <span></span>
         <span></span>
         <span></span>
         <span></span> Hover me
-      </button>`, 
-        scss: `button {
+      </button>`,
+    scss: `button {
           position: relative;
           padding: 1em 1.8em;
           outline: none;
@@ -928,16 +926,16 @@ export const allButtons = [
           transition: none;
           transition-delay: none;
          }
-         `
-    }, 
-              {
-        id: 11,
-        component: <ButtonBatman/>, 
-        name: 'Batman', 
-        html: `<button>
+         `,
+  },
+  {
+    id: 11,
+    component: <ButtonBatman />,
+    name: "Batman",
+    html: `<button>
         <span>PLAY NOW</span>
-      </button>`, 
-        scss: `button {
+      </button>`,
+    scss: `button {
           border: none;
           position: relative;
           width: 200px;
@@ -1000,16 +998,16 @@ export const allButtons = [
           width: 100%;
          }
          
-         `
-    }, 
-              {
-        id: 12,
-        component: <ButtonCrush/>, 
-        name: 'Crush', 
-        html: `<button>
+         `,
+  },
+  {
+    id: 12,
+    component: <ButtonCrush />,
+    name: "Crush",
+    html: `<button>
         <p>Crush!</p>
-      </button>`, 
-        scss: `button {
+      </button>`,
+    scss: `button {
           border: none;
           width: 140px;
           height: 50px;
@@ -1064,18 +1062,18 @@ export const allButtons = [
           height: 80%;
          }
          
-         `
-    }, 
-              {
-        id: 13,
-        component: <ButtonAirport/>, 
-        name: 'Airport', 
-        html: `<button className="ui-btn">
+         `,
+  },
+  {
+    id: 13,
+    component: <ButtonAirport />,
+    name: "Airport",
+    html: `<button className="ui-btn">
         <span className='ui-span'>
           Button 
         </span>
-      </button>`, 
-        scss: `.ui-btn {
+      </button>`,
+    scss: `.ui-btn {
           --btn-default-bg: rgb(100, 100, 100);
           --btn-padding: 15px 20px;
           --btn-hover-bg: rgb(90, 90, 90);
@@ -1231,13 +1229,13 @@ export const allButtons = [
             content: "";
             right: 0;
           }
-        }`
-    }, 
-              {
-        id: 14,
-        component: <ButtonStars/>, 
-        name: 'btnStars', 
-        html: `<div class="sp">
+        }`,
+  },
+  {
+    id: 14,
+    component: <ButtonStars />,
+    name: "btnStars",
+    html: `<div class="sp">
 
         <button class="sparkle-button">
           <span class="spark"></span>
@@ -1304,8 +1302,8 @@ export const allButtons = [
             <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </span>
-      </div>`, 
-        scss: `.sparkle-button {
+      </div>`,
+    scss: `.sparkle-button {
           --active: 0;
           --bg: radial-gradient(
               40% 50% at center 100%,
@@ -1530,13 +1528,13 @@ export const allButtons = [
         .sparkle-button svg {
           inline-size: 1.25em;
           translate: -25% -5%;
-        }`
-    }, 
-              {
-        id: 15,
-        component: <ButtonFlowers/>, 
-        name: 'Flowers', 
-        html: `<button class="btn">
+        }`,
+  },
+  {
+    id: 15,
+    component: <ButtonFlowers />,
+    name: "Flowers",
+    html: `<button class="btn">
         <div class="wrapper">
             <p class="text">Flowers </p>
     
@@ -1577,8 +1575,8 @@ export const allButtons = [
                 <div class="petal four"></div>
             </div>
         </div>
-    </button>`, 
-        scss: `.btn {
+    </button>`,
+    scss: `.btn {
           height: 4em;
           width: 12em;
           display: flex;
@@ -1771,13 +1769,13 @@ export const allButtons = [
           100% {
             transform: rotate(390deg);
           }
-        }`
-    }, 
-              {
-        id: 16,
-        component: <ButtonDraw/>, 
-        name: 'Draw', 
-        html: `<button>
+        }`,
+  },
+  {
+    id: 16,
+    component: <ButtonDraw />,
+    name: "Draw",
+    html: `<button>
 
         <div class="state" id="moon">Send</div>
         <div class="state" id="sun">Send</div>
@@ -1785,8 +1783,8 @@ export const allButtons = [
         <span class="lightRotation2"></span>
         <span class="lightRotation3"></span>
         <span class="lightRotation4"></span>
-        </button>`, 
-        scss: `button {
+        </button>`,
+    scss: `button {
           --sunGradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
           --moonGradient: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
           display: flex;
@@ -1914,20 +1912,20 @@ export const allButtons = [
             transform: rotate(360deg)
           }
         }
-        `
-    }, 
-              {
-        id: 17,
-        component: <ButtonCross/>, 
-        name: 'Cross', 
-        html: `<a href="#" class="button">
+        `,
+  },
+  {
+    id: 17,
+    component: <ButtonCross />,
+    name: "Cross",
+    html: `<a href="#" class="button">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         Button
-      </a>`, 
-        scss: `.button {
+      </a>`,
+    scss: `.button {
           position: relative;
           padding: 12px 25px;
           font-size: 1.5rem;
@@ -2048,13 +2046,13 @@ export const allButtons = [
         
         .button:hover span:nth-child(4 ) {
           bottom: 50%;
-        }`
-    }, 
-              {
-        id: 18,
-        component: <ButtonHeart/>, 
-        name: 'Heart', 
-        html: `<button>Hover me
+        }`,
+  },
+  {
+    id: 18,
+    component: <ButtonHeart />,
+    name: "Heart",
+    html: `<button>Hover me
         <div class="star-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25" height="25">
         <path fill="#fd1853" d="M427.313,88.686c-47.803-47.803-125.213-47.803-173.016,0l-17.087,17.087l-17.087-17.087
@@ -2113,8 +2111,8 @@ export const allButtons = [
       </button>
       
       
-      `, 
-        scss: `button {
+      `,
+    scss: `button {
           background: linear-gradient(45deg, transparent 27%, #fd1853 5%, #fd1853 73%, transparent 27%);
           box-shadow: 6px 0px 0px #00e6f6;
           position: relative;
@@ -2262,16 +2260,16 @@ export const allButtons = [
         
         .fil0 {
           fill: #fd1853
-        }`
-    }, 
-              {
-        id: 19,
-        component: <ButtonMove/>, 
-        name: 'btnMove', 
-        html: `<button>
+        }`,
+  },
+  {
+    id: 19,
+    component: <ButtonMove />,
+    name: "btnMove",
+    html: `<button>
         <span>Button</span><i></i>
-    </button>`, 
-        scss: `button {
+    </button>`,
+    scss: `button {
           text-transform: uppercase;
           letter-spacing: 0.1em;
           padding: 10px 30px;
@@ -2342,18 +2340,18 @@ export const allButtons = [
         button:hover i::after {
           width: 20px;
           left: 80%;
-        }`
-    }, 
-                  {
-        id: 20,
-        component: <ButtonLamp/>, 
-        name: 'Lamp', 
-        html: `<button class="cti">
+        }`,
+  },
+  {
+    id: 20,
+    component: <ButtonLamp />,
+    name: "Lamp",
+    html: `<button class="cti">
         <div class="CTI">
           Code to Infinity
         </div>
-      </button>`, 
-        scss: `.cti {
+      </button>`,
+    scss: `.cti {
           background-color: #6019bd;
           padding: 17px 30px;
           border: 3px solid transparent;
@@ -2402,13 +2400,13 @@ export const allButtons = [
           50% {
             border-color: #6019bd
           }
-        }`
-    }, 
-              //     {
-    //     id: ,
-    //     component: , 
-    //     name: '', 
-    //     html: ``, 
-    //     scss: ``
-    // }, 
+        }`,
+  },
+  //     {
+  //     id: ,
+  //     component: ,
+  //     name: '',
+  //     html: ``,
+  //     scss: ``
+  // },
 ];

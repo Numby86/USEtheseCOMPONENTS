@@ -1,0 +1,23 @@
+.card {
+  width: 200px;
+  height: 300px;
+  background: #ffffff;
+  transform: rotate(20deg) skew(-10deg, -5deg);
+  transition: .4s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 200px;
+}
+
+.card:hover {
+  box-shadow: rgba(240, 128, 128, 0.6) 5px 3px,
+  rgba(240, 128, 128, 0.5) 10px 6px,
+  rgba(240, 128, 128, 0.4) 15px 9px;
+  background: lightcoral;
+  color: #fff;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,57 @@
+.voice-chat-card {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ccc;
+    padding: 10px;
+    background-color: #e8e8e8;
+  }
+  
+  .voice-chat-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .avatarMusic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: black;
+    background-color: #333;
+  }
+  
+  .usernameMusic {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .statusMusic {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 10px;
+  }
+  
+  .voice-chat-card-body {
+    padding: 10px;
+  }
+  
+  .status-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .audio-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  audio {
+    width: 100%;
+  }
+  

@@ -19,7 +19,7 @@ const ListLoader = ({ listLoaders }) => {
 
 return (
     <>
-    <div id='list' className="listCard">
+    <div className="listCard">
       {currentItems.map((el) => (
         <div key={el.id} className="card" >
           <Link to={`/detailLoader/${el.id}`}>
@@ -28,16 +28,25 @@ return (
         </div>
       ))}
     </div>
-    <ReactPaginate 
-        className='glitch lists'
-        //breakLabel="..."
-        nextLabel="next >"
-        onPageChange={handlePageClick}
-        //pageRangeDisplayed={5}
-        pageCount={pageCount}
-        previousLabel="< prev"
-        renderOnZeroPageCount={null}
-    />
+    <div className='myPagination'>
+      <ReactPaginate 
+
+          previousLabel="< prev"
+          nextLabel="next >"
+          pageCount={pageCount}
+          onPageChange={handlePageClick}
+          renderOnZeroPageCount={null}
+          containerClassName={"paginationBttns"}
+          previousLinkClassName={"previousBttn"}
+          nextLinkClassName={"nextBttn"}
+          disabledClassName={"paginationDisabled"}
+          activeClassName={"paginationActive"}
+          //pageRangeDisplayed={5}
+          //className='glitch lists'
+          //breakLabel="..."
+      />
+    </div>
+
     </>
 );
 };
