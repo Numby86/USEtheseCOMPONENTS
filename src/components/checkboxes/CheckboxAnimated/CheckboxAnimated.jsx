@@ -3,7 +3,7 @@ import './CheckboxAnimated.scss';
 
 const CheckboxAnimated = () => {
   return (
-<div className="containerAnimated">
+<div className="containerAnimated"º>
     <input type="checkbox" id="cbx" />
     <label for="cbx" className="checkAnimated">
         <svg width="18px" height="18px" viewBox="0 0 18 18">

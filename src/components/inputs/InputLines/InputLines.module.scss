@@ -1,0 +1,94 @@
+/* use it in dark theme */
+.inputContainer {
+    position: relative;
+    margin: 50px auto;
+    width: 190px;
+  }
+  
+  .inputContainer .ipt {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid #a5a2a2;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .label {
+    transition: all 0.3s ease;
+    color: #d3d2d2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .inputContainer .ipt:focus ~ .label 
+           {
+    top: -20px;
+    transition: 0.3s;
+    color: rgb(172, 46, 172);
+  }
+  
+  .inputContainer .underline {
+    position: absolute;
+    bottom: 4px;
+    left: -7px;
+    height: 2px;
+    width: 110%;
+    background-color: rgb(172, 46, 172);
+    transform: scaleX(0);
+  }
+  
+  .inputContainer .sideline {
+    position: relative;
+    bottom: 15px;
+    right: 18px;
+    height: 2px;
+    width: 18%;
+    background-color: rgb(172, 46, 172);
+    transform: scaleX(0);
+    rotate: 90deg;
+  }
+  
+  .inputContainer .upperline {
+    position: absolute;
+    bottom: 30px;
+    left: -8px;
+    height: 2px;
+    width: 110%;
+    background-color: rgb(172, 46, 172);
+    transform: scaleX(0);
+  }
+  
+  .inputContainer .line {
+    position: relative;
+    bottom: 17px;
+    left: 178px;
+    height: 2px;
+    width: 18%;
+    background-color: rgb(172, 46, 172);
+    transform: scaleX(0);
+    rotate: 90deg;
+  }
+  
+  .inputContainer .ipt:focus ~ .underline  {
+    transform: scaleX(1);
+    transition: 1s;
+  }
+  
+  .inputContainer .ipt:focus ~ .sideline  {
+    transform: scaleX(1);
+    transition: 1s;
+  }
+  
+  .inputContainer .ipt:focus ~ .upperline  {
+    transform: scaleX(1);
+    transition: 1s;
+  }
+  
+  .inputContainer .ipt:focus ~ .line  {
+    transform: scaleX(1);
+    transition: 1s;
+  }

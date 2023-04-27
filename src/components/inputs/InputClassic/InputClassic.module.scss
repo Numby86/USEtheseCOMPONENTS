@@ -1,0 +1,27 @@
+.input {
+    background-color: #505050;
+    border: 1px solid none;
+    border-top-width: 0.7em;
+    margin: 0;
+    padding: 0;
+    color: #505050;
+    word-wrap: break-word;
+    outline: 7px solid #505050;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    transition: all 1s;
+    max-width: 190px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+   }
+   
+   .input:hover {
+    border-top-width: 0.2em;
+    background-color: #f1e8e8;
+   }
+   
+   .input:focus {
+    border-top-width: 0.2em;
+    background-color: #f1e8e8;
+   }

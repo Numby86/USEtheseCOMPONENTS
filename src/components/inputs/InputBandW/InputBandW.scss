@@ -1,0 +1,69 @@
+.input-containerBandW {
+    position: relative;
+  }
+  
+  .inputBandW {
+    padding: 10px;
+    height: 40px;
+    border: 2px solid whitesmoke;
+    border-top: none;
+    border-bottom: none;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    box-shadow: 7px 7px 0px 0px whitesmoke;
+    transition: all 0.5s;
+  }
+  
+  .inputBandW:focus {
+    box-shadow: none;
+    transition: all 0.5s;
+  }
+  
+  .labelBandW {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: whitesmoke;
+    transition: all 0.5s;
+    transform: scale(0);
+    z-index: -1;
+  }
+  
+  .input-containerBandW .toplineBandW {
+    position: absolute;
+    content: "";
+    background-color: whitesmoke;
+    width: 0%;
+    height: 2px;
+    right: 0;
+    top: 0;
+    transition: all 0.5s;
+  }
+  
+  .input-containerBandW .inputBandW[type="text"]:focus ~ .toplineBandW {
+    width: 27%;
+    transition: all 0.5s;
+  }
+  
+  .input-containerBandW .underlineBandW {
+    position: absolute;
+    content: "";
+    background-color: whitesmoke;
+    width: 0%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  
+  .input-containerBandW .inputBandW[type="text"]:focus ~ .underlineBandW {
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .input-containerBandW .inputBandW[type="text"]:focus ~ .labelBandW {
+    top: -10px;
+    transform: scale(1);
+    transition: all 0.5s;
+  }
