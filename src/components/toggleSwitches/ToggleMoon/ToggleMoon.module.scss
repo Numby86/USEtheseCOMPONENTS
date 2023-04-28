@@ -1,0 +1,57 @@
+.switch {
+    --light: #ffffff;
+    --dark: #00000080;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2.1em;
+    transform: skew(-10deg);
+  }
+  
+  .switch .ipt {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light);
+    border: 1px solid var(--dark);
+    box-shadow: 5px 5px 5px var(--dark);
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "☀";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.2em;
+    bottom: 0.5em;
+    color: var(--dark);
+    transition: .4s;
+    transform: scale(1.2);
+  }
+  
+  .switch .ipt:checked + .slider:before {
+    transform: translateX(1.5em) scale(1.2);
+    ;
+    content: "☽";
+    color: var(--light);
+  }
+  
+  .switch .ipt:checked + .slider {
+    background-color: var(--dark);
+  }
