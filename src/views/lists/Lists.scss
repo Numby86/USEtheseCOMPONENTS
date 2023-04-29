@@ -13,9 +13,9 @@
   }
   
   .paginationBttns a {
-    padding: 10px;
+    padding: 8px;
     margin: 8px;
-    border-radius: 5px;
+    border-radius: 12px;
     border: 1px solid rgb(0, 255, 213);
     color: rgb(0, 255, 213);
     cursor: pointer;
@@ -35,3 +35,25 @@
 //   .paginationDisabled a {
 //     display: none;
 //   }
+
+  .goCode{
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: transparent;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    &:hover{
+      border: 2px solid rgb(0, 255, 213);
+      box-shadow: 0 0 15px #E94BE8;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .nextBttn, .previousBttn {
+      display: none;
+    }
+  }

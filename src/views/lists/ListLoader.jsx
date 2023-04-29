@@ -5,8 +5,9 @@ import React, { useState } from 'react';
 
 const ListLoader = ({ listLoaders }) => {
 
+    const goCode = 'CODE </>'
     const [itemOffset, setItemOffset] = useState(0);
-    const itemsPerPage = 10;
+    const itemsPerPage = 8;
     const endOffset = itemOffset + itemsPerPage;
     const currentItems = listLoaders.slice(itemOffset, endOffset);
     const pageCount = Math.ceil(listLoaders.length / itemsPerPage);
@@ -22,8 +23,9 @@ return (
     <div className="listCard">
       {currentItems.map((el) => (
         <div key={el.id} className="card" >
-          <Link to={`/detailLoader/${el.id}`}>
           {el.component}
+          <Link to={`/detailLoader/${el.id}`}>
+            <button className='goCode'>{ goCode }</button>
           </Link>
         </div>
       ))}

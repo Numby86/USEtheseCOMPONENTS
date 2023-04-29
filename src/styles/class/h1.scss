@@ -44,6 +44,55 @@
     box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
 }
 
+@media screen and (max-width: 420px) {
+  
+  .UseComponents, .UseComponents::after {
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: transparent;
+    position: relative;
+}
+
+.UseComponents::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'UseComponents';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.UseComponents::after {
+  animation: UseComponents_4011 1s infinite;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+.UseComponents {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+.UseComponents {
+  background-color: transparent;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+  }
 
     
   @keyframes UseComponents_4011 {

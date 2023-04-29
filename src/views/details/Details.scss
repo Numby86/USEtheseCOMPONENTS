@@ -17,13 +17,14 @@
     background-color: whitesmoke;
     grid-row-start: 1;
     grid-row-end: 2;
-    width: 95%;
+    width: 96.5%;
     height: 95%;
     background-color: inherit;
 }
 
 .html{
     border: solid 2px #e34c26;
+    box-shadow: 0 0 15px #e34c26;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-template-rows: 1fr 4fr;
@@ -41,6 +42,7 @@
 }
 .scss{
     border: solid 2px #0070B8;
+    box-shadow: 0 0 15px #0070B8;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -81,6 +83,7 @@ pre{
     display: none;
 }
 .editor{
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
 }
@@ -89,4 +92,22 @@ pre{
     height: 72px;
     background-color: rgb(5, 5, 22);
     border-radius: 50%;
+}
+
+.backList{
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: transparent;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    &:hover{
+      border: 2px solid rgb(0, 255, 213);
+      box-shadow: 0 0 15px #E94BE8;
+    }
 }

@@ -1,31 +1,166 @@
-.title{
+.navbar {
+    background-color: rgb(5, 5, 22);
+    color: whitesmoke;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-.h1{
-    font-size: 48px;
-}
-.myNavBar{
-    background-color: rgba(254, 1, 153, 0.8);
-    margin: 15px 25px 25px 25px;
-    border-radius: 35px;
-    font-size: 20px;
-    &__ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+  }
+  
+  .navbar__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 255, 213, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .navbar__menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    // box-shadow: 0 0 15px #E94BE8;
+    // border: 2px solid rgb(0, 255, 213);
+  }
+  
+  .navbar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar__item {
+    margin: 0.5rem 0;
+
+  }
+  
+  .navbar__link {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    padding: 0.5rem;
+    border-radius: 25px;
+  }
+  
+  .navbar__link:hover {
+    color: #E94BE8;
+    background-color: rgb(5, 5, 22);
+    // box-shadow: 0 0 15px #E94BE8;
+    // border: 2px solid rgb(0, 255, 213);
+  }
+  
+  .navbar__toggle {
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #E94BE8;
+    border: 2px solid rgb(0, 255, 213);
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: relative;
+  }
+  
+  .navbar__icon {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar__icon:before,
+  .navbar__icon:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar__icon:before {
+    transform: translateY(-8px);
+  }
+  
+  .navbar__icon:after {
+    transform: translateY(8px);
+  }
+  
+  .navbar__toggle.active .navbar__icon {
+    background-color: transparent;
+  }
+  
+  .navbar__toggle.active .navbar__icon:before {
+    transform: rotate(-45deg) translateY(0);
+  }
+  
+  .navbar__toggle.active .navbar__icon:after {
+    transform: rotate(45deg) translateY(0);
+  }
+
+  @media screen and (max-width: 410px) {
+
+ h1{
+        max-width: 250px !important;
     }
-    &__li{
-        font-weight: bold;
-        padding: 10px;
-        min-width: 150px;
-        border-radius: 55px 55px 15px 15px;
-        &:hover{
-            background-color: rgb(5, 5, 22);
-            color: rgb(0, 255, 213);
-            box-shadow: 0 0 15px #E94BE8;
-        }
-    }
-}
+
+ }
+// .myNavBar{
+//     background-color: rgba(254, 1, 153, 0.8);
+//     margin: 15px 25px 25px 25px;
+//     border-radius: 35px;
+//     font-size: 20px;
+//     &__ul{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     &__li{
+//         font-weight: bold;
+//         padding: 10px;
+//         min-width: 150px;
+//         border-radius: 55px 55px 15px 15px;
+//         &:hover{
+//             background-color: rgb(5, 5, 22);
+//             color: rgb(0, 255, 213);
+//             box-shadow: 0 0 15px #E94BE8;
+//         }
+//     }
+// }
 
