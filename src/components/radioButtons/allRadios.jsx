@@ -4,7 +4,7 @@ import RadioAnimated from './RadioAnimated/RadioAnimated';
 
 export const allRadios = [
         {
-        id: 1, 
+        id: 701, 
         component: <RadioBasic/>, 
         name: 'Basic', 
         html: `<div class="customCheckBoxHolder">
@@ -114,28 +114,28 @@ export const allRadios = [
           }`
     }, 
     {
-        id: 2, 
+        id: 702, 
         component: <RadioTricolor/>, 
         name: 'Tricolor', 
         html: `<div class="radio-input">
         <input checked="" value="color-1" name="color" id="color-1" type="radio">
         <label for="color-1">
           <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Check"> <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="M6 12L10.2426 16.2426L18.727 7.75732" id="Vector"></path> </g> </g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Check"> <path strokeLinejoin="round" strokeLinecap="round" stroke-width="2" stroke="#ffffff" d="M6 12L10.2426 16.2426L18.727 7.75732" id="Vector"></path> </g> </g></svg>
           </span>
         </label>
       
         <input value="color-2" name="color" id="color-2" type="radio">
         <label for="color-2">
           <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Check"> <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="M6 12L10.2426 16.2426L18.727 7.75732" id="Vector"></path> </g> </g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Check"> <path strokeLinejoin="round" strokeLinecap="round" stroke-width="2" stroke="#ffffff" d="M6 12L10.2426 16.2426L18.727 7.75732" id="Vector"></path> </g> </g></svg>
           </span>
         </label>
       
         <input value="color-3" name="color" id="color-3" type="radio">
         <label for="color-3">
           <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Check"> <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="M6 12L10.2426 16.2426L18.727 7.75732" id="Vector"></path> </g> </g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Check"> <path strokeLinejoin="round" strokeLinecap="round" stroke-width="2" stroke="#ffffff" d="M6 12L10.2426 16.2426L18.727 7.75732" id="Vector"></path> </g> </g></svg>
           </span>
         </label>
     
@@ -208,7 +208,7 @@ export const allRadios = [
           `
     }, 
     {
-        id: 3, 
+        id: 703, 
         component: <RadioAnimated/>, 
         name: 'Animated', 
         html: `<div class="rating">
@@ -255,7 +255,7 @@ export const allRadios = [
           overflow: visible;
           fill: transparent;
           stroke: var(--stroke);
-          stroke-linejoin: bevel;
+          strokeLinejoin: bevel;
           stroke-dasharray: 12;
           animation: idle 4s linear infinite;
           transition: stroke 0.2s, fill 0.5s;
@@ -280,7 +280,7 @@ export const allRadios = [
           stroke: var(--fill);
           stroke-opacity: 0;
           stroke-dasharray: 0;
-          stroke-linejoin: miter;
+          strokeLinejoin: miter;
           stroke-width: 8px;
         }
         
@@ -293,7 +293,7 @@ export const allRadios = [
             stroke: var(--stroke);
             stroke-dasharray: 10;
             stroke-width: 1px;
-            stroke-linejoin: bevel;
+            strokeLinejoin: bevel;
           }
         
           30% {
@@ -304,13 +304,13 @@ export const allRadios = [
             stroke: var(--stroke);
             stroke-dasharray: 10;
             stroke-width: 1px;
-            stroke-linejoin: bevel;
+            strokeLinejoin: bevel;
           }
         
           30.1% {
             stroke: var(--fill);
             stroke-dasharray: 0;
-            stroke-linejoin: miter;
+            strokeLinejoin: miter;
             stroke-width: 8px;
           }
         

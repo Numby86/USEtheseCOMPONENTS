@@ -3,7 +3,7 @@ import './TogglePlane.scss';
 
 const TogglePlane = () => {
   return (
-<label class="plane-switch">
+<label className="plane-switch">
     <input type="checkbox" className='iptPlane' />
     <div className='divPlane'>
         <div className='divPlane'>

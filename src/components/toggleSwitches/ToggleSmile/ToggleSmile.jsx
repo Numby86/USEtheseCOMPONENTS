@@ -6,7 +6,7 @@ const ToggleSmile = () => {
 <div className={styles.checkboxwrapper5}>
   <div className={styles.check}>
     <input className={styles.ipt} type="checkbox" id="check-5" />
-    <label className={styles.label} for="check-5"></label>
+    <label className={styles.label} htmlFor="check-5"></label>
   </div>
 </div>
 

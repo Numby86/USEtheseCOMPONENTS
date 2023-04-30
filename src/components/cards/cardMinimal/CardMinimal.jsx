@@ -3,19 +3,19 @@ import './CardMinimal.scss';
 
 const CardMinimal = () => {
   return (
-<div class="cardMinimal">
-  <div class="tools">
-    <div class="circle">
-      <span class="red box"></span>
+<div className="cardMinimal">
+  <div className="tools">
+    <div className="circle">
+      <span className="red box"></span>
     </div>
-    <div class="circle">
-      <span class="yellow box"></span>
+    <div className="circle">
+      <span className="yellow box"></span>
     </div>
-    <div class="circle">
-      <span class="green box"></span>
+    <div className="circle">
+      <span className="green box"></span>
     </div>
   </div>
-  <div class="cardMinimal__content">
+  <div className="cardMinimal__content">
   </div>
 </div>
   )

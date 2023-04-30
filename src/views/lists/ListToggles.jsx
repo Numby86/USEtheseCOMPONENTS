@@ -7,7 +7,7 @@ const ListToggles = ({ listToggles }) => {
 
   const goCode = 'CODE </>'
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 10;
+  const itemsPerPage = 8;
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = listToggles.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(listToggles.length / itemsPerPage);

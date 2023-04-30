@@ -21,7 +21,7 @@ import CheckboxMore from "./CheckboxMore/CheckboxMore";
 
 export const allCheckboxes = [
   {
-    id: 1,
+    id: 301,
     component: <CheckboxStar />,
     name: "Star",
     html: `<label class="container">
@@ -63,7 +63,7 @@ export const allCheckboxes = [
       `,
   },
   {
-    id: 2,
+    id: 302,
     component: <CheckboxWhite />,
     name: "White",
     html: `<div class="content">
@@ -115,7 +115,7 @@ export const allCheckboxes = [
       }`,
   },
   {
-    id: 3,
+    id: 303,
     component: <CheckboxAnimated />,
     name: "Animated",
     html: `<div className="containerAnimated">
@@ -154,8 +154,8 @@ export const allCheckboxes = [
         position: relative;
         z-index: 1;
         fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
+        strokeLinecap: round;
+        strokeLinejoin: round;
         stroke: #c8ccd4;
         stroke-width: 1.5;
         transform: translate3d(0, 0, 0);
@@ -200,7 +200,7 @@ export const allCheckboxes = [
     `,
   },
   {
-    id: 4,
+    id: 304,
     component: <CheckboxIphone />,
     name: "Iphone",
     html: `<div class="checkbox-apple">
@@ -268,7 +268,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 5,
+    id: 305,
     component: <CheckboxPadlock />,
     name: "Padlock",
     html: `<input id="inpLock" type="checkbox">
@@ -304,7 +304,7 @@ export const allCheckboxes = [
         .btn-lock svg .bling {
           stroke: #fff;
           stroke-width: 2.5;
-          stroke-linecap: round;
+          strokeLinecap: round;
           stroke-dasharray: 3;
           stroke-dashoffset: 15;
           transition: all 0.3s ease;
@@ -313,8 +313,8 @@ export const allCheckboxes = [
         .btn-lock svg .lock {
           stroke: #fff;
           stroke-width: 4;
-          stroke-linejoin: round;
-          stroke-linecap: round;
+          strokeLinejoin: round;
+          strokeLinecap: round;
           stroke-dasharray: 36;
           transition: all 0.4s ease;
         }
@@ -375,7 +375,7 @@ export const allCheckboxes = [
         `,
   },
   {
-    id: 6,
+    id: 306,
     component: <CheckboxHambur />,
     name: "Hamburguer",
     html: `<label class="hamburger">
@@ -403,8 +403,8 @@ export const allCheckboxes = [
         .line {
           fill: none;
           stroke: white;
-          stroke-linecap: round;
-          stroke-linejoin: round;
+          strokeLinecap: round;
+          strokeLinejoin: round;
           stroke-width: 3;
           /* Define the transition for transforming the Stroke */
           transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -426,7 +426,7 @@ export const allCheckboxes = [
         `,
   },
   {
-    id: 7,
+    id: 307,
     component: <CheckboxBlur />,
     name: "Blur",
     html: `<label class="container">
@@ -493,7 +493,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 8,
+    id: 308,
     component: <CheckboxCyber />,
     name: "Cyber",
     html: `<label class="cyberpunk-checkbox-label">
@@ -551,7 +551,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 9,
+    id: 309,
     component: <CheckboxYeah />,
     name: "Yeah",
     html: `<label class="material-checkbox">
@@ -621,7 +621,7 @@ export const allCheckboxes = [
         `,
   },
   {
-    id: 10,
+    id: 310,
     component: <CheckboxLike />,
     name: "Like",
     html: `<div class="con-like">
@@ -727,7 +727,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 11,
+    id: 311,
     component: <CheckboxNeon />,
     name: "Neon",
     html: `<div class="checkbox-wrapper-33">
@@ -809,8 +809,8 @@ export const allCheckboxes = [
           fill: none;
           stroke-width: 3;
           stroke: currentColor;
-          stroke-linecap: round;
-          stroke-linejoin: round;
+          strokeLinecap: round;
+          strokeLinejoin: round;
           stroke-miterlimit: 10;
           color: var(--c-primary);
           display: inline-block;
@@ -865,7 +865,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 12,
+    id: 312,
     component: <CheckboxGradient />,
     name: "Gradient",
     html: `<label class="container">
@@ -954,7 +954,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 13,
+    id: 313,
     component: <CheckboxAgree />,
     name: "Agree",
     html: `<label class="checkbox">
@@ -1023,14 +1023,14 @@ export const allCheckboxes = [
         `,
   },
   {
-    id: 14,
+    id: 314,
     component: <CheckboxThumb />,
     name: "Thumb",
     html: `<label class="container">
         <input type="checkbox" />
         <div class="checkmark">
           <svg fill="none" viewBox="0 0 24 24">
-          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.3" stroke="#FFFFFF" d="M8 10V20M8 10L4 9.99998V20L8 20M8 10L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20L8 20"></path>
+          <path strokeLinejoin="round" strokeLinecap="round" stroke-width="1.3" stroke="#FFFFFF" d="M8 10V20M8 10L4 9.99998V20L8 20M8 10L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20L8 20"></path>
           </svg>
         </div>
       </label>`,
@@ -1104,7 +1104,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 15,
+    id: 315,
     component: <CheckboxEye />,
     name: "Eye",
     html: `<label class="container">
@@ -1185,7 +1185,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 16,
+    id: 316,
     component: <CheckboxCustom />,
     name: "Custom",
     html: `<div class="customCheckBoxHolder">
@@ -1282,7 +1282,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 17,
+    id: 317,
     component: <CheckboxTurn />,
     name: "Turn",
     html: `<label class="container">
@@ -1359,7 +1359,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 18,
+    id: 318,
     component: <CheckboxSimple />,
     name: "Simple",
     html: `<label class="container">
@@ -1440,7 +1440,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 19,
+    id: 319,
     component: <CheckboxList />,
     name: "List",
     html: `<div id="checklist">
@@ -1657,7 +1657,7 @@ export const allCheckboxes = [
         }`,
   },
   {
-    id: 20,
+    id: 320,
     component: <CheckboxMore />,
     name: "More",
     html: `<label class="container">

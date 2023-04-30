@@ -6,7 +6,7 @@ const ButtonCopy = () => {
   return (
     <>
 
-<button class={styles.buttonDownload}>Download</button>
+<button className={styles.buttonDownload}>Download</button>
     </>
   )
 }

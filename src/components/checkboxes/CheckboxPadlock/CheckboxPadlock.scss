@@ -21,7 +21,7 @@
   .btn-lock .svgLock .bling {
     stroke: #fff;
     stroke-width: 2.5;
-    stroke-linecap: round;
+    strokeLinecap: round;
     stroke-dasharray: 3;
     stroke-dashoffset: 15;
     transition: all 0.3s ease;
@@ -30,8 +30,8 @@
   .btn-lock .svgLock .lock {
     stroke: #fff;
     stroke-width: 4;
-    stroke-linejoin: round;
-    stroke-linecap: round;
+    strokeLinejoin: round;
+    strokeLinecap: round;
     stroke-dasharray: 36;
     transition: all 0.4s ease;
   }

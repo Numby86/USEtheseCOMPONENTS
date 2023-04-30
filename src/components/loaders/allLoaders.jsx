@@ -21,7 +21,7 @@ import LoaderStarWars from "./LoaderStarWars/LoaderStarWars";
 
 export const allLoaders = [
   {
-    id: 1,
+    id: 501,
     component: <LoaderAnimated />,
     name: "Animated",
     html: `<svg className="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
@@ -32,10 +32,10 @@ export const allLoaders = [
             </linearGradient>
         </defs>
         <circle className="pl__ring" r="56" cx="64" cy="64" fill="none" stroke="hsla(0,10%,10%,0.1)" stroke-width="16"
-            stroke-linecap="round" />
+            strokeLinecap="round" />
         <path className="pl__worm"
             d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z"
-            fill="none" stroke="url(#pl-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"
+            fill="none" stroke="url(#pl-grad)" stroke-width="16" strokeLinecap="round" strokeLinejoin="round"
             stroke-dasharray="44 1111" stroke-dashoffset="10" />
     </svg>`,
     scss: `
@@ -146,7 +146,7 @@ export const allLoaders = [
         `,
   },
   {
-    id: 2,
+    id: 502,
     component: <LoaderKinetic />,
     name: "Kinetic",
     html: `<div className="kinetic">
@@ -209,7 +209,7 @@ export const allLoaders = [
           `,
   },
   {
-    id: 3,
+    id: 503,
     component: <LoaderNeon />,
     name: "Neon",
     html: `<div className='loader'>
@@ -248,7 +248,7 @@ export const allLoaders = [
         }`,
   },
   {
-    id: 4,
+    id: 504,
     component: <LoaderPuzzle />,
     name: "Puzzle",
     html: `<div className="banter-loader">
@@ -758,7 +758,7 @@ export const allLoaders = [
           }`,
   },
   {
-    id: 5,
+    id: 505,
     component: <LoaderBalls />,
     name: "Balls",
     html: `<div class="newtons-cradle">
@@ -841,7 +841,7 @@ export const allLoaders = [
          `,
   },
   {
-    id: 6,
+    id: 506,
     component: <LoaderHexagonal />,
     name: "hexagonal",
     html: `
@@ -1375,7 +1375,7 @@ export const allLoaders = [
         `,
   },
   {
-    id: 7,
+    id: 507,
     component: <LoaderSpinner />,
     name: "LoaderSpinner",
     html: `<div class="spinner"></div>
@@ -1417,7 +1417,7 @@ export const allLoaders = [
         }`,
   },
   {
-    id: 8,
+    id: 508,
     component: <LoaderHastag />,
     name: "Hastag",
     html: `
@@ -1498,7 +1498,7 @@ export const allLoaders = [
          }`,
   },
   {
-    id: 9,
+    id: 509,
     component: <LoaderStairs />,
     name: "Stairs",
     html: `<div class="loader"></div>`,
@@ -1568,7 +1568,7 @@ export const allLoaders = [
         }`,
   },
   {
-    id: 10,
+    id: 510,
     component: <LoaderText />,
     name: "Text",
     html: `
@@ -1702,7 +1702,7 @@ export const allLoaders = [
         `,
   },
   {
-    id: 11,
+    id: 511,
     component: <LoaderCard />,
     name: "LoaderCard",
     html: `<div class="loader">
@@ -1801,7 +1801,7 @@ export const allLoaders = [
         }`,
   },
   {
-    id: 12,
+    id: 512,
     component: <LoaderHamster />,
     name: "Hamster",
     html: `<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
@@ -2096,7 +2096,7 @@ export const allLoaders = [
         }`,
   },
   {
-    id: 13,
+    id: 513,
     component: <LoaderBars />,
     name: "bars",
     html: `<div class="loading">
@@ -2160,7 +2160,7 @@ export const allLoaders = [
          }`,
   },
   {
-    id: 14,
+    id: 514,
     component: <LoaderAlien />,
     name: "alien",
     html: `<div class="spinner"></div>`,
@@ -2215,7 +2215,7 @@ export const allLoaders = [
         }`,
   },
   {
-    id: 15,
+    id: 515,
     component: <LoaderClock />,
     name: "clock",
     html: `<div class="loader">
@@ -2273,7 +2273,7 @@ export const allLoaders = [
          }`,
   },
   {
-    id: 16,
+    id: 516,
     component: <LoadeFollow />,
     name: "follow",
     html: `<div class="follow-the-leader-line">
@@ -2355,7 +2355,7 @@ export const allLoaders = [
         }`,
   },
   {
-    id: 17,
+    id: 517,
     component: <LoaderSmile />,
     name: "Smile",
     html: `<svg class="gegga">
@@ -2404,7 +2404,7 @@ export const allLoaders = [
           fill: none;
           stroke: url(#gradient);
           stroke-width: 23;
-          stroke-linecap: round;
+          strokeLinecap: round;
         }
         
         .strecken {
@@ -2413,7 +2413,7 @@ export const allLoaders = [
           fill: none;
           stroke: url(#gradient);
           stroke-width: 23;
-          stroke-linecap: round;
+          strokeLinecap: round;
         }
         
         .skugga {
@@ -2435,7 +2435,7 @@ export const allLoaders = [
         `,
   },
   {
-    id: 18,
+    id: 518,
     component: <LoaderPong />,
     name: "pong",
     html: `<div class="loader"></div>`,
@@ -2499,7 +2499,7 @@ export const allLoaders = [
               `,
   },
   {
-    id: 19,
+    id: 519,
     component: <LoaderPercentage />,
     name: "Percentage",
     html: `<div class="loader"></div>`,
@@ -2623,7 +2623,7 @@ export const allLoaders = [
           `,
   },
   {
-    id: 20,
+    id: 520,
     component: <LoaderStarWars />,
     name: "StarWars",
     html: `<div id="loader">

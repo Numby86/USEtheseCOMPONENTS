@@ -3,7 +3,7 @@ import './ToggleLemon.scss';
 
 const ToggleLemon = () => {
   return (
-<div class="checkbox-wrapper-41">
+<div className="checkbox-wrapper-41">
   <input type="checkbox" className='iptLemon' />
 </div>
   )

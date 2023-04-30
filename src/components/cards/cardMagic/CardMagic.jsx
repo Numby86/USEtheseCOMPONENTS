@@ -3,9 +3,9 @@ import './CardMagic.scss';
 
 const CardMagic = () => {
   return (
-<div class="cardMagic">
-  <div class="cardMagic-info">
-    <p class="title">Magic Card</p>
+<div className="cardMagic">
+  <div className="cardMagic-info">
+    <p className="title">Magic Card</p>
   </div>
 </div>
   )

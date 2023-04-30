@@ -6,7 +6,7 @@ const CheckboxCustom = () => {
 <div className="customCheckBoxHolder">
 
 <input type="checkbox" id="cCB1" className="customCheckBoxInput" />
-<label for="cCB1" className="customCheckBoxWrapper">
+<label htmlFor="cCB1" className="customCheckBoxWrapper">
     <div className="customCheckBox">
         <div className="inner">Toggle Me</div>
     </div>

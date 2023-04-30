@@ -21,7 +21,7 @@ import Card3D from "./Card3D/Card3D";
 
 export const allCards = [
   {
-    id: 1,
+    id: 201,
     component: <CardMinimal />,
     name: "Minimal",
     html: `<div class="card">
@@ -81,7 +81,7 @@ export const allCards = [
          `,
   },
   {
-    id: 2,
+    id: 202,
     component: <CardTurn />,
     name: "Turn",
     html: `<div id="card" class="card">
@@ -168,7 +168,7 @@ export const allCards = [
           }`,
   },
   {
-    id: 3,
+    id: 203,
     component: <CardMagic />,
     name: "Magic Card",
     html: `<div class="card">
@@ -235,7 +235,7 @@ export const allCards = [
            `,
   },
   {
-    id: 4,
+    id: 204,
     component: <CardBook />,
     name: "Book",
     html: ` <div class="book">
@@ -309,7 +309,7 @@ export const allCards = [
         }`,
   },
   {
-    id: 5,
+    id: 205,
     component: <CardTriple />,
     name: "Triple",
     html: `<div class="card">
@@ -361,7 +361,7 @@ export const allCards = [
         }`,
   },
   {
-    id: 6,
+    id: 206,
     component: <CardMoveOn />,
     name: "MoveOn",
     html: `<div class="card">
@@ -421,7 +421,7 @@ export const allCards = [
         `,
   },
   {
-    id: 7,
+    id: 207,
     component: <CardSkills />,
     name: "Skills",
     html: `<div class="card">
@@ -503,7 +503,7 @@ export const allCards = [
         `,
   },
   {
-    id: 8,
+    id: 208,
     component: <CardTarget />,
     name: "Target",
     html: `<div class="card">
@@ -572,7 +572,7 @@ export const allCards = [
         }`,
   },
   {
-    id: 9,
+    id: 209,
     component: <CardFlip />,
     name: "Flip",
     html: `<div class="flip-card">
@@ -643,7 +643,7 @@ export const allCards = [
         }`,
   },
   {
-    id: 10,
+    id: 210,
     component: <CardCorners />,
     name: "Corners",
     html: `<div class="card">HOVER</div>`,
@@ -701,7 +701,7 @@ export const allCards = [
 }`,
   },
   {
-    id: 11,
+    id: 211,
     component: <CardMusic />,
     name: "Music",
     html: `<div className="voice-chat-card">
@@ -779,7 +779,7 @@ export const allCards = [
         `,
   },
   {
-    id: 12,
+    id: 212,
     component: <CardMargin />,
     name: "Margin",
     html: `<div class="card">
@@ -817,7 +817,7 @@ export const allCards = [
         `,
   },
   {
-    id: 13,
+    id: 213,
     component: <CardRadiactive />,
     name: "Radiactive",
     html: `<div class="card">
@@ -875,7 +875,7 @@ export const allCards = [
         }`,
   },
   {
-    id: 14,
+    id: 214,
     component: <CardPill />,
     name: "Pill",
     html: `<div class="card">
@@ -913,7 +913,7 @@ export const allCards = [
         }`,
   },
   {
-    id: 15,
+    id: 215,
     component: <CardLines />,
     name: "Lines",
     html: `<div class="container">
@@ -1048,7 +1048,7 @@ export const allCards = [
         `,
   },
   {
-    id: 16,
+    id: 216,
     component: <CardPhoto />,
     name: "Photo",
     html: `<div class="card">Hover me</div>`,
@@ -1077,7 +1077,7 @@ export const allCards = [
         }`,
   },
   {
-    id: 17,
+    id: 217,
     component: <CardBlurBalls />,
     name: "BlurBalls",
     html: `<div class="container">
@@ -1156,7 +1156,7 @@ export const allCards = [
         }`,
   },
   {
-    id: 18,
+    id: 218,
     component: <CardColors />,
     name: "Colors",
     html: `
@@ -1173,7 +1173,7 @@ export const allCards = [
          }`,
   },
   {
-    id: 19,
+    id: 219,
     component: <CardContent />,
     name: "Content",
     html: `<div class="card">
@@ -1218,7 +1218,7 @@ export const allCards = [
          }`,
   },
   {
-    id: 20,
+    id: 220,
     component: <Card3D />,
     name: "3D",
     html: `<div class="flip">

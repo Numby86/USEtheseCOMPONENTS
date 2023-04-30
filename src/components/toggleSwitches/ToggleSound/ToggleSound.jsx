@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './ToggleSound.module.scss';
 
-const ToggleIronman = () => {
+const ToggleSound = () => {
   return (
     <>
     <input className={styles.ipt} id="checkbox" type="checkbox" />
-    <label class={styles.Switch} for="checkbox">
+    <label className={styles.Switch} htmlFor="checkbox">
     </label>
     </>
   )
 }
 
-export default ToggleIronman
+export default ToggleSound;

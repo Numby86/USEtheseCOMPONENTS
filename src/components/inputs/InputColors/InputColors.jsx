@@ -3,7 +3,7 @@ import styles from './InputColors.module.scss';
 
 const InputColors = () => {
   return (
-<input type="text" autocomplete="off" placeholder="Type your text" name="text" className={styles.inputColors} />
+<input type="text" autoComplete="off" placeholder="Type your text" name="text" className={styles.inputColors} />
   )
 }
 

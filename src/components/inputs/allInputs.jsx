@@ -21,7 +21,7 @@ import InputYellow from "./InputYellow/InputYellow";
 
 export const allInputs = [
   {
-    id: 1,
+    id: 401,
     component: <InputAnimated />,
     name: "Animated",
     html: `<div class="form__group field">
@@ -92,7 +92,7 @@ export const allInputs = [
           }`,
   },
   {
-    id: 2,
+    id: 402,
     component: <InputDiagonally />,
     name: "Diagonally",
     html: `<div class="input__container">
@@ -166,7 +166,7 @@ export const allInputs = [
           }`,
   },
   {
-    id: 3,
+    id: 403,
     component: <InputTransition />,
     name: "Transition",
     html: `<div class="form">
@@ -223,7 +223,7 @@ export const allInputs = [
            } */`,
   },
   {
-    id: 4,
+    id: 404,
     component: <InputAqua />,
     name: "Aqua",
     html: `<div class="inputbox">
@@ -289,7 +289,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 5,
+    id: 405,
     component: <InputBandW />,
     name: "BandW",
     html: `<div class="input-container">
@@ -369,7 +369,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 6,
+    id: 406,
     component: <InputPurple />,
     name: "Purple",
     html: `
@@ -388,7 +388,7 @@ export const allInputs = [
          }`,
   },
   {
-    id: 7,
+    id: 407,
     component: <InputGoogle />,
     name: "Google",
     html: `<div class="searchbar">
@@ -537,7 +537,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 8,
+    id: 408,
     component: <InputClassic />,
     name: "Classic",
     html: `
@@ -571,7 +571,7 @@ export const allInputs = [
          }`,
   },
   {
-    id: 9,
+    id: 409,
     component: <InputGrey />,
     name: "Grey",
     html: `
@@ -595,7 +595,7 @@ export const allInputs = [
          }`,
   },
   {
-    id: 10,
+    id: 410,
     component: <InputLines />,
     name: "Lines",
     html: `<div class="input-container">
@@ -702,7 +702,7 @@ export const allInputs = [
           }`,
   },
   {
-    id: 11,
+    id: 411,
     component: <InputColors />,
     name: "Colors",
     html: `<input type="text" autocomplete="off" placeholder="Type your text" name="text" class="inputColors">`,
@@ -744,7 +744,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 12,
+    id: 412,
     component: <InputSearch />,
     name: "Search",
     html: `<div class="input__container">
@@ -810,7 +810,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 13,
+    id: 413,
     component: <InputRed />,
     name: "Red",
     html: `<input placeholder="Type here" class="input" name="text" type="text">`,
@@ -840,7 +840,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 14,
+    id: 414,
     component: <InputValidate />,
     name: "Validate",
     html: `<div class="containerInput">
@@ -903,7 +903,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 15,
+    id: 415,
     component: <InputTriple />,
     name: "Triple",
     html: `<div className="container">
@@ -943,7 +943,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 16,
+    id: 416,
     component: <InputMatrix />,
     name: "Matrix",
     html: `<input class="input" placeholder="Search The Matrix">`,
@@ -989,7 +989,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 17,
+    id: 417,
     component: <InputRainbow />,
     name: "Rainbow",
     html: `<input placeholder="Enter your text..." class="input" name="text" type="text">`,
@@ -1018,7 +1018,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 18,
+    id: 418,
     component: <InputCyber />,
     name: "Cyber",
     html: `<form action="" className="containerCyber">
@@ -1197,7 +1197,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 19,
+    id: 419,
     component: <InputBlue />,
     name: "Blue",
     html: `<input type="text" name="text" className="input" placeholder="Write a message" />`,
@@ -1229,7 +1229,7 @@ export const allInputs = [
         }`,
   },
   {
-    id: 20,
+    id: 420,
     component: <InputYellow />,
     name: "Yellow",
     html: `<input type="text" placeholder="Write here..." name="text" class="input">`,

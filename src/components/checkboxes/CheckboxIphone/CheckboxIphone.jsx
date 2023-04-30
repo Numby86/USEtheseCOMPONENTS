@@ -5,7 +5,7 @@ const CheckboxIphone = () => {
   return (
 <div className={styles.checkboxApple}>
   <input className={styles.yep} id="check-apple" type="checkbox" />
-  <label className={styles.labelApple} for="check-apple"></label>
+  <label className={styles.labelApple} htmlFor="check-apple"></label>
 </div>
   )
 }

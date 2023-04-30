@@ -5,7 +5,7 @@ const TogglePower = () => {
   return (
     <>
  <input type="checkbox" id="checkbox" />
-    <label for="checkbox" className="switchPower">
+    <label htmlFor="checkbox" className="switchPower">
         <div className="powersign"></div>
     </label>
     </>

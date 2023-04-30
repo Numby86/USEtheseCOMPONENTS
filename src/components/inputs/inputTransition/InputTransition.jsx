@@ -3,9 +3,9 @@ import './InputTransition.scss';
 
 const InputTransition = () => {
   return (
-<div class="form">
-  <input class="input" placeholder="Type your text" required="" type="text" />
-  <span class="input-border"></span>
+<div className="form">
+  <input className="input" placeholder="Type your text" required="" type="text" />
+  <span className="input-border"></span>
 </div>
   )
 }

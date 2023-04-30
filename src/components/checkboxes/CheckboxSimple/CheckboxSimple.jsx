@@ -3,9 +3,9 @@ import styles from './CheckboxSimple.module.scss';
 
 const CheckboxSimple = () => {
   return (
-<label class={styles.container}>
-  <input class={styles.ipt} type="checkbox" />
-  <div class={styles.checkmark}></div>
+<label className={styles.container}>
+  <input className={styles.ipt} type="checkbox" />
+  <div className={styles.checkmark}></div>
 </label>
   )
 }

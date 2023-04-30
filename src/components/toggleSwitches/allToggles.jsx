@@ -21,7 +21,7 @@ import ToggleSum from "./ToggleSum/ToggleSum";
 
 export const allToggles = [
   {
-    id: 1,
+    id: 601,
     component: <ToggleSun />,
     name: "Sun",
     html: `<label class="switch">
@@ -139,7 +139,7 @@ export const allToggles = [
           }`,
   },
   {
-    id: 2,
+    id: 602,
     component: <TogglePower />,
     name: "Power",
     html: ` <input type="checkbox" id="checkbox" />
@@ -225,7 +225,7 @@ export const allToggles = [
         `,
   },
   {
-    id: 3,
+    id: 603,
     component: <ToggleOnOff />,
     name: "OnOff",
     html: `<div class="checkbox-wrapper-8">
@@ -356,7 +356,7 @@ export const allToggles = [
         }`,
   },
   {
-    id: 4,
+    id: 604,
     component: <ToogleBasic />,
     name: "Basic",
     html: `<label class="switch">
@@ -437,7 +437,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 5,
+    id: 605,
     component: <ToogleYellow />,
     name: "Yellow",
     html: `<label>
@@ -538,7 +538,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 6,
+    id: 606,
     component: <ToggleButton />,
     name: "Button",
     html: `<label class="switch">
@@ -651,7 +651,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 7,
+    id: 607,
     component: <ToggleAnimate />,
     name: "Animate",
     html: `<label class="switch">
@@ -710,7 +710,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 8,
+    id: 608,
     component: <ToggleMetal />,
     name: "Metal",
     html: ` <input type="checkbox" id="checkboxInput">
@@ -758,7 +758,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 9,
+    id: 609,
     component: <ToggleSmile />,
     name: "Smile",
     html: `<div class="checkbox-wrapper-5">
@@ -865,7 +865,7 @@ export const allToggles = [
       `,
   },
   {
-    id: 10,
+    id: 610,
     component: <ToggleLemon />,
     name: "Lemon",
     html: `<div class="checkbox-wrapper-41">
@@ -916,7 +916,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 11,
+    id: 611,
     component: <ToggleLightbulb />,
     name: "Lightbulb",
     html: `<input type="checkbox" class="l">`,
@@ -994,7 +994,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 12,
+    id: 612,
     component: <TogglePlane />,
     name: "Plane",
     html: `<label class="plane-switch">
@@ -1184,7 +1184,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 13,
+    id: 613,
     component: <ToggleClick />,
     name: "Click",
     html: `<label class="switch">
@@ -1242,7 +1242,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 14,
+    id: 614,
     component: <ToggleColors />,
     name: "Colors",
     html: `<label class="switch">
@@ -1336,7 +1336,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 15,
+    id: 615,
     component: <ToggleBubble />,
     name: "Bubble",
     html: `<label class="switch">
@@ -1426,7 +1426,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 16,
+    id: 616,
     component: <ToggleWhite />,
     name: "White",
     html: `<label class="label">
@@ -1479,7 +1479,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 17,
+    id: 617,
     component: <ToggleSound />,
     name: "Sound",
     html: `<input id="checkbox" type="checkbox">
@@ -1534,7 +1534,7 @@ export const allToggles = [
       `,
   },
   {
-    id: 18,
+    id: 618,
     component: <ToggleText />,
     name: "Text",
     html: `<label class="switch">
@@ -1630,7 +1630,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 19,
+    id: 619,
     component: <ToggleMoon />,
     name: "Moon",
     html: `<label class="switch">
@@ -1696,7 +1696,7 @@ export const allToggles = [
       }`,
   },
   {
-    id: 20,
+    id: 620,
     component: <ToggleSum />,
     name: "Sum",
     html: `<label class="switch">

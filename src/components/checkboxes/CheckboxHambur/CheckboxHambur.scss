@@ -16,8 +16,8 @@
   .line {
     fill: none;
     stroke: white;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    strokeLinecap: round;
+    strokeLinejoin: round;
     stroke-width: 3;
     /* Define the transition for transforming the Stroke */
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),

@@ -5,7 +5,7 @@ const ToggleMetal = () => {
   return (
     <>
         <input type="checkbox" id="checkboxInput" className={styles.checkboxInput}/>
-        <label for="checkboxInput" className={styles.toggleSwitch}>
+        <label htmlFor="checkboxInput" className={styles.toggleSwitch}>
         </label>
     </>
   )

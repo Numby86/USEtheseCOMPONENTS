@@ -20,7 +20,7 @@
   overflow: visible;
   fill: transparent;
   stroke: var(--stroke);
-  stroke-linejoin: bevel;
+  strokeLinejoin: bevel;
   stroke-dasharray: 12;
   animation: idle 4s linear infinite;
   transition: stroke 0.2s, fill 0.5s;
@@ -45,7 +45,7 @@
   stroke: var(--fill);
   stroke-opacity: 0;
   stroke-dasharray: 0;
-  stroke-linejoin: miter;
+  strokeLinejoin: miter;
   stroke-width: 8px;
 }
 
@@ -58,7 +58,7 @@
     stroke: var(--stroke);
     stroke-dasharray: 10;
     stroke-width: 1px;
-    stroke-linejoin: bevel;
+    strokeLinejoin: bevel;
   }
 
   30% {
@@ -69,13 +69,13 @@
     stroke: var(--stroke);
     stroke-dasharray: 10;
     stroke-width: 1px;
-    stroke-linejoin: bevel;
+    strokeLinejoin: bevel;
   }
 
   30.1% {
     stroke: var(--fill);
     stroke-dasharray: 0;
-    stroke-linejoin: miter;
+    strokeLinejoin: miter;
     stroke-width: 8px;
   }
 

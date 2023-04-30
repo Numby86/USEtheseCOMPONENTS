@@ -40,13 +40,17 @@ function App() {
   const listLoaders = disorder(allLoaders);
   const listRadios = disorder(allRadios);
   const listToggles = disorder(allToggles);
+  const listAll = [allButtons, allCards, allCheckboxes, allInputs, allLoaders, allToggles];
+  const all = disorder(listAll.flat());
+
+  console.log(all);
 
   return (
     <div className="App">
       <Header></Header>
       <main className='main'>
       <Routes>
-          <Route path='/' element={<Home/>}></Route>
+          <Route path='/' element={<Home all={all} />}></Route>
           <Route path='*' element={<ErrorPage/>}></Route>
           <Route path='/listButtons' element={<ListButtons listButtons={listButtons} />}></Route>
           <Route path='/listCards' element={<ListCards listCards={listCards} />}></Route>

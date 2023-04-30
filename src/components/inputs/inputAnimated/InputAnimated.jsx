@@ -3,9 +3,9 @@ import './InputAnimated.scss';
 
 const InputAnimated = () => {
   return (
-<div class="form__group field">
-    <input type="input" class="form__field" placeholder="Name" required="" />
-    <label for="name" class="form__label">Name</label>
+<div className="htmlForm__group field">
+    <input type="input" className="htmlForm__field" placeholder="Name" required="" />
+    <label htmlFor="name" className="htmlForm__label">Name</label>
 </div>
   )
 }

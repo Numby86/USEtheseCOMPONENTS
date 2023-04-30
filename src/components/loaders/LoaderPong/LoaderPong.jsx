@@ -3,7 +3,7 @@ import styles from './LoaderPong.module.scss';
 
 const LoaderPong = () => {
   return (
-<div class={styles.loader}></div>
+<div className={styles.loader}></div>
   )
 }
 
