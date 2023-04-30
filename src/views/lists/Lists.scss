@@ -52,8 +52,16 @@
     }
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 480px) {
     .nextBttn, .previousBttn {
       display: none;
     }
   }
+  
+  // @media all and (min-width: 480px) and (max-width: 900px) {
+
+  // }
+  
+  // @media all and (min-width: 900px) and (max-width: 1024px) {
+
+  // }

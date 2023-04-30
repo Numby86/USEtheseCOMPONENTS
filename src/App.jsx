@@ -11,6 +11,7 @@ import { allToggles } from './components/toggleSwitches/allToggles'
 import Header from './components/fixed/Header';
 import Footer from './components/fixed/Footer';
 import Home from './views/home/Home';
+import ErrorPage from './views/error/ErrorPage';
 
 import DetailButton from './views/details/DetailButton';
 import DetailCard from './views/details/DetailCard';
@@ -46,6 +47,7 @@ function App() {
       <main className='main'>
       <Routes>
           <Route path='/' element={<Home/>}></Route>
+          <Route path='*' element={<ErrorPage/>}></Route>
           <Route path='/listButtons' element={<ListButtons listButtons={listButtons} />}></Route>
           <Route path='/listCards' element={<ListCards listCards={listCards} />}></Route>
           <Route path='/listCheckboxes' element={<ListCheckboxes listCheckboxes={ listCheckboxes } />}></Route>

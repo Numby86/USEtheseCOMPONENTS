@@ -1,0 +1,237 @@
+.errorDiv{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    width: calc(100% - 10%);
+    min-height: 400px;
+    height: calc(100% - 10%);
+    margin: auto;
+}
+
+.errorGlitch, .errorGlitch::after {
+    padding: 20px 220px;
+    font-size: 48px;
+    border: none;
+    border-radius: 75px;
+    color: whitesmoke;
+    background-color: transparent;
+    position: relative;
+}
+
+.errorGlitch::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'ERROR';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+
+.errorGlitch::after {
+    animation: errorGlitch_4011 1s infinite;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid rgb(0, 255, 213);
+}
+
+.errorGlitch {
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+    &__ERROR{
+        font-size: 60px;
+    }
+    &__404{
+        font-size: 130px;
+    }
+    &__NOTFOUND{
+        font-size: 40px;
+    }
+}
+
+.errorGlitch {
+    background-color: transparent;
+    border: 1px solid rgb(0, 255, 213);
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+@media screen and (max-width: 420px) {
+  
+  .errorGlitch, .errorGlitch::after {
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: transparent;
+    position: relative;
+}
+
+.errorGlitch::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'ERROR';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.errorGlitch::after {
+  animation: errorGlitch_4011 1s infinite;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+.errorGlitch {
+    margin: auto;
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+.errorGlitch {
+  background-color: transparent;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+  }
+
+    
+  @keyframes errorGlitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .errorDiv{
+    padding-top: 20px;
+    width: 90%;
+}
+
+    .errorGlitch{
+        width: 90%;
+        &__ERROR{
+            font-size: 26px;
+        }
+        &__404{
+            font-size: 60px;
+        }
+        &__NOTFOUND{
+            font-size: 20px;
+        }
+    }
+  }
+  
+  @media all and (min-width: 480px) and (max-width: 900px) {
+
+    .errorDiv{
+        width: 90%;
+        padding-top: 0px;
+        width: 90%;
+    }
+
+    .errorGlitch{
+        &__ERROR{
+            font-size: 35px;
+        }
+        &__404{
+            font-size: 80px;
+        }
+        &__NOTFOUND{
+            font-size: 28px;
+        }
+    }
+  }
+  
+  @media all and (min-width: 900px) and (max-width: 1025px) {
+
+    .errorDiv{
+        width: 90%;
+        padding-top: 0px;
+    }
+
+    .errorGlitch{
+        &__ERROR{
+            font-size: 44px;
+        }
+        &__404{
+            font-size: 100px;
+        }
+        &__NOTFOUND{
+            font-size: 32px;
+        }
+    }
+  }
