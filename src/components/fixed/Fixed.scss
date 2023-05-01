@@ -59,22 +59,22 @@
   
   .navbar__item {
     margin: 0.5rem 0;
-
   }
   
   .navbar__link {
-    font-size: 1rem;
+    min-width: 200px;
+    font-size: 0.7rem;
     color: whitesmoke;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-    padding: 0.5rem;
-    border-radius: 25px;
+    padding: 10px;
+    border-radius: 15px;
   }
   
   .navbar__link:hover {
-    color: #E94BE8;
+    color: rgb(0, 255, 213);
     background-color: rgb(5, 5, 22);
-    // box-shadow: 0 0 15px #E94BE8;
+    box-shadow: 0 0 15px #E94BE8;
     // border: 2px solid rgb(0, 255, 213);
   }
   
@@ -176,8 +176,6 @@
     color: rgb(0, 255, 213);
   }
   
-  .fa-github,
-  .fa-linkedin,
   .footerA {
     border-radius: 8px;
     padding: 8px;

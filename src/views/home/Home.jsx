@@ -2,32 +2,47 @@ import "./Home.scss";
 import "../lists/Lists.scss";
 import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Home = ({ all }) => {
   const goCode = "CODE </>";
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 10;
-  const endOffset = itemOffset + itemsPerPage;
-  const currentItems = all.slice(itemOffset, endOffset);
+  const [transitioning, setTransitioning] = useState(false);
+  const itemsPerPage = 5;
+  const currentItems = all.slice(itemOffset, itemOffset + itemsPerPage);
   const pageCount = Math.ceil(all.length / itemsPerPage);
+  const intervalTime = 3000;
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % all.length;
+    const newOffset = event.selected * itemsPerPage;
     setItemOffset(newOffset);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTransitioning(true);
+      setTimeout(() => {
+        setItemOffset((itemOffset + itemsPerPage) % all.length);
+      }, 500);
+    }, intervalTime);
+    return () => clearInterval(interval);
+  }, [itemOffset]);
+
+  const handleTransitionEnd = () => {
+    setTransitioning(false);
+  };
+
   return (
-    //<div className='homeMain'>
     <>
-      <div className="listCard">
+    <div className="present">Hola soy la presentacion</div>
+      <div className={`listCard listTrans ${transitioning ? "transitioning" : ""}`} onTransitionEnd={handleTransitionEnd}>
         {currentItems.map((el) => (
           <div key={el.id} className="card">
             {el.component}
           </div>
         ))}
       </div>
-      <div className="myPagination">
+      <div className="myPagination pagesHome">
         <ReactPaginate
           previousLabel="< prev"
           nextLabel="next >"
@@ -39,15 +54,88 @@ const Home = ({ all }) => {
           nextLinkClassName={"nextBttn"}
           disabledClassName={"paginationDisabled"}
           activeClassName={"paginationActive"}
-          pageRangeDisplayed={1}
+          //pageRangeDisplayed={1}
           //className='glitch lists'
-          breakLabel="..."
+          //breakLabel="..."
         />
       </div>
-    </>
-
-    // </div>
+      </>
   );
 };
 
 export default Home;
+
+
+// import "./Home.scss";
+// import "../lists/Lists.scss";
+// import { Link } from "react-router-dom";
+// import ReactPaginate from "react-paginate";
+// import React, { useState, useEffect } from "react";
+
+// const Home = ({ all }) => {
+//   const goCode = "CODE </>";
+//   const [itemOffset, setItemOffset] = useState(0);
+//   const itemsPerPage = 5;
+//   const currentItems = all.slice(itemOffset, itemOffset + itemsPerPage);
+//   const pageCount = Math.ceil(all.length / itemsPerPage);
+//   const intervalTime = 3000; 
+
+//   const handlePageClick = (event) => {
+//     const newOffset = event.selected * itemsPerPage;
+//     setItemOffset(newOffset);
+//   };
+
+//   // const handlePrevClick = () => {
+//   //   setItemOffset(Math.max(itemOffset - itemsPerPage, 0));
+//   // };
+
+//   // const handleNextClick = () => {
+//   //   setItemOffset(Math.min(itemOffset + itemsPerPage, (pageCount - 1) * itemsPerPage));
+//   // };
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setItemOffset((itemOffset + itemsPerPage) % all.length);
+//     }, intervalTime);
+//     return () => clearInterval(interval);
+//   }, [itemOffset]);
+
+//   return (
+//     <>
+//       <div className="present"></div>
+//       <div className="listCard listTrans">
+//           {currentItems.map((el) => (
+//             <div key={el.id} className="card">
+//               {el.component}
+//             </div>
+//           ))}
+//         {/* <button className="prevBtn" onClick={handlePrevClick}>
+//           &lt;
+//         </button>
+//         <button className="nextBtn" onClick={handleNextClick}>
+//           &gt;
+//         </button> */}
+//       </div>
+//       <div className="myPagination">
+//         <ReactPaginate
+//           previousLabel="< prev"
+//           nextLabel="next >"
+//           pageCount={pageCount}
+//           onPageChange={handlePageClick}
+//           renderOnZeroPageCount={null}
+//           containerClassName={"paginationBttns"}
+//           previousLinkClassName={"previousBttn"}
+//           nextLinkClassName={"nextBttn"}
+//           disabledClassName={"paginationDisabled"}
+//           activeClassName={"paginationActive"}
+//           //pageRangeDisplayed={1}
+//           //className='glitch lists'
+//           //breakLabel="..."
+//         />
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Home;
+
