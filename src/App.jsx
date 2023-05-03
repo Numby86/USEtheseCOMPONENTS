@@ -13,6 +13,7 @@ import Footer from './components/fixed/Footer';
 import Home from './views/home/Home';
 import ErrorPage from './views/error/ErrorPage';
 
+import Detail from './views/details/Detail';
 import DetailButton from './views/details/DetailButton';
 import DetailCard from './views/details/DetailCard';
 import DetailCheckbox from './views/details/DetailCheckbox'
@@ -60,6 +61,7 @@ function App() {
           <Route path='/listRadios' element={<ListRadios listRadios={listRadios} />}></Route>
           <Route path='/listToggles' element={<ListToggles listToggles={listToggles} />}></Route>
 
+          <Route path='/detail/:id' element={<Detail all={all} />}></Route>
           <Route path='/detailButton/:id' element={<DetailButton listButtons={listButtons} />}></Route>
           <Route path='/detailCard/:id' element={<DetailCard listCards={listCards} />}></Route>
           <Route path='/detailCheckbox/:id' element={<DetailCheckbox listCheckboxes={listCheckboxes} />}></Route>

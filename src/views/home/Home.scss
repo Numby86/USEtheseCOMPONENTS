@@ -1,23 +1,33 @@
+.myhome{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
 .present{
-    position: relative;
-    top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 200px;
-    margin-top: 400px;
+    width: 90%;
+    min-height: 150px;
     margin: auto;
+    margin-top: 50px;
     border: 3px solid  rgb(0, 255, 213);
     box-shadow: 0 0 15px #E94BE8;
     font-size: 20px;
+    &__p{
+        margin: 5px;
+    }
 }
 .listTrans {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -120px;
-    transition: opacity 1s ease-out;
+    align-items: start;
+    margin-top: 100px;
+    transition: opacity 0.5s linear;
 }
 
 .listTrans.transitioning {
@@ -25,5 +35,6 @@
 }
 
 .pagesHome{
-    margin-top: -120px;
+    margin-top: 0px;
+    width: 100%;
 }

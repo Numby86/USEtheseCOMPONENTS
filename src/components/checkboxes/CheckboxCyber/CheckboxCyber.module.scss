@@ -9,7 +9,7 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .cyberpunk-checkbox {
+  .cyberpunkCheckbox {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -22,7 +22,7 @@
     cursor: pointer;
   }
   
-  .cyberpunk-checkbox:before {
+  .cyberpunkCheckbox:before {
     content: "";
     background-color: #30cfd0;
     display: block;
@@ -36,11 +36,18 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .cyberpunk-checkbox:checked:before {
+  .cyberpunkCheckbox:checked:before {
     transform: translate(-50%, -50%) scale(1);
+    width: 10px;
+    height: 10px;
+  }
+
+  .cyberpunkCheckbox:checked:focus {
+    width: 10px;
+    height: 10px;
   }
   
-  .cyberpunk-checkbox-label {
+  .cyberpunkCheckboxLabel {
     font-size: 18px;
     color: #fff;
     cursor: pointer;

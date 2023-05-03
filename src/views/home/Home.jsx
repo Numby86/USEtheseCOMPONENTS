@@ -33,16 +33,18 @@ const Home = ({ all }) => {
   };
 
   return (
-    <>
-    <div className="present">Hola soy la presentacion</div>
+    <div className="myhome">
+    <div className="present"><p className="present__p">Esta página esta creada para desarrolladores que no les guste mucho la maquetación, entra en el listado de componentes que necesites, elige el que te guste y con un clic tienes el código copiado, y listo para implementar en tu proyecto.</p></div>
       <div className={`listCard listTrans ${transitioning ? "transitioning" : ""}`} onTransitionEnd={handleTransitionEnd}>
         {currentItems.map((el) => (
           <div key={el.id} className="card">
             {el.component}
+            <Link to={`/detail/${el.id}`}>
+            <button className='goCode'>{ goCode }</button>
+          </Link>
           </div>
         ))}
-      </div>
-      <div className="myPagination pagesHome">
+        <div className="myPagination pagesHome">
         <ReactPaginate
           previousLabel="< prev"
           nextLabel="next >"
@@ -59,7 +61,8 @@ const Home = ({ all }) => {
           //breakLabel="..."
         />
       </div>
-      </>
+      </div>
+      </div>
   );
 };
 

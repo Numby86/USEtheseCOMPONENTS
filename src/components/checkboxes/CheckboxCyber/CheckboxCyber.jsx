@@ -1,10 +1,10 @@
 import React from 'react';
-import './CheckboxCyber.scss';
+import styles from './CheckboxCyber.module.scss';
 
 const CheckboxCyber = () => {
   return (
-<label className="cyberpunk-checkbox-label">
-<input className="cyberpunk-checkbox" type="checkbox" />
+<label className={styles.cyberpunkCheckboxLabel}>
+<input className={styles.cyberpunkCheckbox} type="checkbox" />
 Check me</label>
   )
 }
