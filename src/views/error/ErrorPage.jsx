@@ -7,7 +7,7 @@ const ErrorPage = () => {
   return (
     <div className="errorDiv">
       <Link to={"/"}>
-        <button className="backList">
+        <button className="backList goHome">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{home}
         </button>
       </Link>
